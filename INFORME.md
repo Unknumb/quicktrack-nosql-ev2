@@ -3,7 +3,7 @@
 **Asignatura:** BDY0101 Base de Datos No Relacionales · **Caso:** Forma B – QuickTrack  
 **Integrantes:** Alvaro Uribe · Nicolas Mansilla · Genesis Montero  
 **Docente:** German Barrientos · **Sección:** BDY0101-001D  
-**Repositorio:** [URL DEL REPOSITORIO GITHUB]
+**Repositorio:** https://github.com/Unknumb/quicktrack-nosql-ev2
 
 ---
 
