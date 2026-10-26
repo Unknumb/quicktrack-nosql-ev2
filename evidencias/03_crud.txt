@@ -1,0 +1,75 @@
+2026-10-25 20:52:46,487 | INFO    | db | Conexión OK | servidor MongoDB 8.0.34 | ping 783.0 ms | base 'QuickTrack'
+Conteo inicial: {'clientes': 100, 'ordenes_entrega': 100, 'seguimiento': 100, 'valoraciones': 100}
+
+==========================================================================================
+1. CREATE - Registrar cliente y orden de envío
+==========================================================================================
+2026-10-25 20:52:47,133 | INFO    | servicio | Cliente creado cli_101
+  [OK] Cliente insertado: {'_id': 'cli_101', 'nombre': 'Ana Prueba', 'correo': 'ana.prueba@quicktrack.cl', 'fecha_registro': datetime.datetime(2026, 10, 25, 20, 52, 47, 54654), 'pais': 'Chile'}
+2026-10-25 20:52:47,589 | INFO    | servicio | Orden creada orden_101 (cliente cli_101, ruta ruta_10)
+  [OK] Orden insertada: {'_id': 'orden_101', 'cliente_id': 'cli_101', 'ruta_id': 'ruta_10', 'zona': 'Norte', 'fecha_envio': datetime.datetime(2026, 10, 25, 20, 52, 47, 278365), 'estado': 'En preparación', 'medio_pago': 'Tarjeta', 'total': 45990.0}
+  [OK] Seguimiento creado en la misma transacción: {'_id': 'seg_101', 'orden_id': 'orden_101', 'estado_actual': 'En preparación', 'historial': [{'estado': 'En preparación', 'fecha': datetime.datetime(2026, 10, 25, 20, 52, 47, 278000)}]}
+
+==========================================================================================
+2. READ - Consultar la orden completa (cliente + ruta + seguimiento)
+==========================================================================================
+  [OK] Orden orden_101 | cliente: Ana Prueba | ruta: Valparaíso -> La Serena | estado: En preparación
+
+==========================================================================================
+3. UPDATE - Avanzar estados del envío (transacción orden + seguimiento)
+==========================================================================================
+2026-10-25 20:52:48,048 | INFO    | servicio | Orden orden_101: En preparación -> Despachado
+  [OK] En preparación -> Despachado
+2026-10-25 20:52:48,391 | INFO    | servicio | Orden orden_101: Despachado -> En tránsito
+  [OK] Despachado -> En tránsito
+2026-10-25 20:52:48,698 | INFO    | servicio | Orden orden_101: En tránsito -> Entregado
+  [OK] En tránsito -> Entregado
+  [OK] Seguimiento tras actualizar: {'estado_actual': 'Entregado', 'historial': [{'estado': 'En preparación'}, {'estado': 'Despachado'}, {'estado': 'En tránsito'}, {'estado': 'Entregado'}]}
+
+==========================================================================================
+4. CREATE - Valoración del cliente
+==========================================================================================
+2026-10-25 20:52:48,929 | INFO    | servicio | Valoración creada para orden_101 (puntaje 5)
+  [OK] Valoración insertada: {'_id': 'val_101', 'orden_id': 'orden_101', 'puntaje': 5, 'comentario': 'Entrega a tiempo', 'recomienda': True}
+
+==========================================================================================
+4b. UPDATE masivo - Marcar valoraciones críticas para que atención al cliente contacte
+==========================================================================================
+  [OK] update_many: 37 encontradas, 37 modificadas
+  [OK] Verificación: 37 valoraciones marcadas
+
+==========================================================================================
+5. CONTROL DE ERRORES - operaciones inválidas que deben ser rechazadas
+==========================================================================================
+  [RECHAZADO 409] Cliente con correo duplicado -> Ya existe un cliente con el correo ana.prueba@quicktrack.cl
+  [RECHAZADO 400] Cliente con correo inválido -> 'correo' no tiene formato válido
+  [RECHAZADO 404] Orden con cliente inexistente -> El cliente cli_99999 no existe
+  [RECHAZADO 400] Orden con total negativo -> 'total' debe ser un número mayor a 0
+  [RECHAZADO 409] Transición de estado inválida (Entregado -> En preparación) -> Transición no permitida: 'Entregado' -> 'En preparación'. Permitidas: []
+  [RECHAZADO 409] Segunda valoración para la misma orden -> La orden orden_101 ya tiene una valoración
+  [RECHAZADO 409] Valorar una orden que no fue entregada -> Solo se pueden valorar órdenes entregadas (estado actual: Cancelado)
+  -- Segunda línea de defensa: validación en la propia base ($jsonSchema / índices únicos) --
+  [RECHAZADO por MongoDB código 121] Insert directo con puntaje 9 (fuera de 1-5) -> Document failed validation
+  [RECHAZADO por MongoDB código 121] Insert directo con estado inexistente -> Document failed validation
+  [RECHAZADO por MongoDB E11000] Insert directo con _id duplicado -> clave duplicada {'_id': 'orden_101'}
+
+==========================================================================================
+6. VALIDACIÓN DE INTEGRIDAD DEL DATASET - detección y corrección
+==========================================================================================
+  6.1 Seguimientos cuyo estado_actual no coincide con el último evento del historial: 72
+  [OK] Corregidos con update por pipeline: 72. Restantes: 0
+  6.2 Órdenes cuyo estado difiere del seguimiento: 81 (23 canceladas con seguimiento activo)
+  [OK] Sincronizadas 58 órdenes; 23 marcadas requiere_revision; desfases no explicados restantes: 0
+  6.3 Órdenes con cliente inexistente: 0 (antes de normalizar clientes._id de 1 -> 'cli_1' eran 100 de 100)
+  6.4 Correos de cliente duplicados: 0 (protegido por índice único ux_correo)
+
+==========================================================================================
+7. DELETE - Eliminación en cascada de la orden de prueba y del cliente
+==========================================================================================
+2026-10-25 20:52:57,170 | INFO    | servicio | Orden orden_101 eliminada en cascada: {'ordenes_entrega': 1, 'seguimiento': 1, 'valoraciones': 1}
+  [OK] Eliminados: {'ordenes_entrega': 1, 'seguimiento': 1, 'valoraciones': 1}
+  [OK] Cliente eliminado: 1
+  [RECHAZADO 404] Consultar la orden eliminada -> La orden orden_101 no existe
+
+Conteo final: {'clientes': 100, 'ordenes_entrega': 100, 'seguimiento': 100, 'valoraciones': 100}
+Sin pérdida ni duplicación de datos: SÍ

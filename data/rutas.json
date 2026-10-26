@@ -1,0 +1,100 @@
+{"_id": "ruta_1", "zona": "Poniente", "ciudad_origen": "Santiago", "ciudad_destino": "Talca", "distancia_km": 1261.57}
+{"_id": "ruta_2", "zona": "Norte", "ciudad_origen": "Concepción", "ciudad_destino": "Iquique", "distancia_km": 1640.14}
+{"_id": "ruta_3", "zona": "Norte", "ciudad_origen": "Santiago", "ciudad_destino": "Iquique", "distancia_km": 1909.22}
+{"_id": "ruta_4", "zona": "Centro", "ciudad_origen": "Temuco", "ciudad_destino": "Puerto Montt", "distancia_km": 1581.31}
+{"_id": "ruta_5", "zona": "Oriente", "ciudad_origen": "Valparaíso", "ciudad_destino": "Arica", "distancia_km": 1945.84}
+{"_id": "ruta_6", "zona": "Poniente", "ciudad_origen": "Valparaíso", "ciudad_destino": "Puerto Montt", "distancia_km": 1150.71}
+{"_id": "ruta_7", "zona": "Oriente", "ciudad_origen": "Antofagasta", "ciudad_destino": "Iquique", "distancia_km": 429.59}
+{"_id": "ruta_8", "zona": "Centro", "ciudad_origen": "Valparaíso", "ciudad_destino": "Iquique", "distancia_km": 1056.63}
+{"_id": "ruta_9", "zona": "Oriente", "ciudad_origen": "Valparaíso", "ciudad_destino": "Arica", "distancia_km": 233.0}
+{"_id": "ruta_10", "zona": "Norte", "ciudad_origen": "Valparaíso", "ciudad_destino": "La Serena", "distancia_km": 1729.09}
+{"_id": "ruta_11", "zona": "Oriente", "ciudad_origen": "Santiago", "ciudad_destino": "La Serena", "distancia_km": 1810.46}
+{"_id": "ruta_12", "zona": "Poniente", "ciudad_origen": "Santiago", "ciudad_destino": "Iquique", "distancia_km": 1385.76}
+{"_id": "ruta_13", "zona": "Norte", "ciudad_origen": "Temuco", "ciudad_destino": "Talca", "distancia_km": 276.49}
+{"_id": "ruta_14", "zona": "Oriente", "ciudad_origen": "Santiago", "ciudad_destino": "Puerto Montt", "distancia_km": 154.82}
+{"_id": "ruta_15", "zona": "Sur", "ciudad_origen": "Temuco", "ciudad_destino": "La Serena", "distancia_km": 1295.17}
+{"_id": "ruta_16", "zona": "Centro", "ciudad_origen": "Temuco", "ciudad_destino": "Iquique", "distancia_km": 208.77}
+{"_id": "ruta_17", "zona": "Oriente", "ciudad_origen": "Concepción", "ciudad_destino": "Arica", "distancia_km": 780.47}
+{"_id": "ruta_18", "zona": "Poniente", "ciudad_origen": "Temuco", "ciudad_destino": "Arica", "distancia_km": 1623.16}
+{"_id": "ruta_19", "zona": "Norte", "ciudad_origen": "Santiago", "ciudad_destino": "Iquique", "distancia_km": 932.16}
+{"_id": "ruta_20", "zona": "Centro", "ciudad_origen": "Valparaíso", "ciudad_destino": "Arica", "distancia_km": 1236.41}
+{"_id": "ruta_21", "zona": "Poniente", "ciudad_origen": "Santiago", "ciudad_destino": "Iquique", "distancia_km": 1780.49}
+{"_id": "ruta_22", "zona": "Oriente", "ciudad_origen": "Santiago", "ciudad_destino": "Puerto Montt", "distancia_km": 528.33}
+{"_id": "ruta_23", "zona": "Oriente", "ciudad_origen": "Concepción", "ciudad_destino": "La Serena", "distancia_km": 1379.78}
+{"_id": "ruta_24", "zona": "Oriente", "ciudad_origen": "Antofagasta", "ciudad_destino": "Talca", "distancia_km": 390.6}
+{"_id": "ruta_25", "zona": "Poniente", "ciudad_origen": "Antofagasta", "ciudad_destino": "Iquique", "distancia_km": 1785.95}
+{"_id": "ruta_26", "zona": "Sur", "ciudad_origen": "Concepción", "ciudad_destino": "Arica", "distancia_km": 1083.52}
+{"_id": "ruta_27", "zona": "Poniente", "ciudad_origen": "Antofagasta", "ciudad_destino": "La Serena", "distancia_km": 1898.47}
+{"_id": "ruta_28", "zona": "Sur", "ciudad_origen": "Concepción", "ciudad_destino": "Puerto Montt", "distancia_km": 1582.21}
+{"_id": "ruta_29", "zona": "Norte", "ciudad_origen": "Antofagasta", "ciudad_destino": "Talca", "distancia_km": 352.13}
+{"_id": "ruta_30", "zona": "Oriente", "ciudad_origen": "Temuco", "ciudad_destino": "Arica", "distancia_km": 1411.96}
+{"_id": "ruta_31", "zona": "Oriente", "ciudad_origen": "Temuco", "ciudad_destino": "La Serena", "distancia_km": 232.16}
+{"_id": "ruta_32", "zona": "Oriente", "ciudad_origen": "Valparaíso", "ciudad_destino": "Talca", "distancia_km": 1035.96}
+{"_id": "ruta_33", "zona": "Oriente", "ciudad_origen": "Concepción", "ciudad_destino": "Talca", "distancia_km": 818.12}
+{"_id": "ruta_34", "zona": "Centro", "ciudad_origen": "Antofagasta", "ciudad_destino": "Arica", "distancia_km": 1613.64}
+{"_id": "ruta_35", "zona": "Norte", "ciudad_origen": "Temuco", "ciudad_destino": "Arica", "distancia_km": 1277.0}
+{"_id": "ruta_36", "zona": "Poniente", "ciudad_origen": "Valparaíso", "ciudad_destino": "La Serena", "distancia_km": 1948.11}
+{"_id": "ruta_37", "zona": "Oriente", "ciudad_origen": "Concepción", "ciudad_destino": "Iquique", "distancia_km": 1952.23}
+{"_id": "ruta_38", "zona": "Oriente", "ciudad_origen": "Temuco", "ciudad_destino": "Arica", "distancia_km": 461.85}
+{"_id": "ruta_39", "zona": "Centro", "ciudad_origen": "Antofagasta", "ciudad_destino": "Arica", "distancia_km": 1995.41}
+{"_id": "ruta_40", "zona": "Poniente", "ciudad_origen": "Temuco", "ciudad_destino": "Iquique", "distancia_km": 478.68}
+{"_id": "ruta_41", "zona": "Oriente", "ciudad_origen": "Temuco", "ciudad_destino": "La Serena", "distancia_km": 741.13}
+{"_id": "ruta_42", "zona": "Poniente", "ciudad_origen": "Valparaíso", "ciudad_destino": "Puerto Montt", "distancia_km": 659.98}
+{"_id": "ruta_43", "zona": "Centro", "ciudad_origen": "Temuco", "ciudad_destino": "Iquique", "distancia_km": 1924.79}
+{"_id": "ruta_44", "zona": "Norte", "ciudad_origen": "Valparaíso", "ciudad_destino": "Arica", "distancia_km": 1456.33}
+{"_id": "ruta_45", "zona": "Norte", "ciudad_origen": "Antofagasta", "ciudad_destino": "Puerto Montt", "distancia_km": 1215.62}
+{"_id": "ruta_46", "zona": "Poniente", "ciudad_origen": "Temuco", "ciudad_destino": "Puerto Montt", "distancia_km": 1823.4}
+{"_id": "ruta_47", "zona": "Oriente", "ciudad_origen": "Temuco", "ciudad_destino": "Iquique", "distancia_km": 1963.06}
+{"_id": "ruta_48", "zona": "Sur", "ciudad_origen": "Concepción", "ciudad_destino": "Iquique", "distancia_km": 1156.16}
+{"_id": "ruta_49", "zona": "Oriente", "ciudad_origen": "Santiago", "ciudad_destino": "Iquique", "distancia_km": 1635.23}
+{"_id": "ruta_50", "zona": "Poniente", "ciudad_origen": "Valparaíso", "ciudad_destino": "Talca", "distancia_km": 1580.96}
+{"_id": "ruta_51", "zona": "Centro", "ciudad_origen": "Antofagasta", "ciudad_destino": "Puerto Montt", "distancia_km": 1347.01}
+{"_id": "ruta_52", "zona": "Oriente", "ciudad_origen": "Santiago", "ciudad_destino": "La Serena", "distancia_km": 1902.15}
+{"_id": "ruta_53", "zona": "Poniente", "ciudad_origen": "Valparaíso", "ciudad_destino": "Talca", "distancia_km": 1079.8}
+{"_id": "ruta_54", "zona": "Centro", "ciudad_origen": "Antofagasta", "ciudad_destino": "La Serena", "distancia_km": 1541.02}
+{"_id": "ruta_55", "zona": "Poniente", "ciudad_origen": "Temuco", "ciudad_destino": "La Serena", "distancia_km": 736.08}
+{"_id": "ruta_56", "zona": "Sur", "ciudad_origen": "Temuco", "ciudad_destino": "Iquique", "distancia_km": 276.97}
+{"_id": "ruta_57", "zona": "Norte", "ciudad_origen": "Santiago", "ciudad_destino": "Puerto Montt", "distancia_km": 477.21}
+{"_id": "ruta_58", "zona": "Norte", "ciudad_origen": "Antofagasta", "ciudad_destino": "Talca", "distancia_km": 338.26}
+{"_id": "ruta_59", "zona": "Norte", "ciudad_origen": "Valparaíso", "ciudad_destino": "Iquique", "distancia_km": 850.7}
+{"_id": "ruta_60", "zona": "Norte", "ciudad_origen": "Valparaíso", "ciudad_destino": "Arica", "distancia_km": 113.73}
+{"_id": "ruta_61", "zona": "Oriente", "ciudad_origen": "Antofagasta", "ciudad_destino": "La Serena", "distancia_km": 1244.89}
+{"_id": "ruta_62", "zona": "Sur", "ciudad_origen": "Valparaíso", "ciudad_destino": "Arica", "distancia_km": 185.34}
+{"_id": "ruta_63", "zona": "Poniente", "ciudad_origen": "Santiago", "ciudad_destino": "Puerto Montt", "distancia_km": 1271.97}
+{"_id": "ruta_64", "zona": "Norte", "ciudad_origen": "Temuco", "ciudad_destino": "Puerto Montt", "distancia_km": 332.64}
+{"_id": "ruta_65", "zona": "Sur", "ciudad_origen": "Antofagasta", "ciudad_destino": "Arica", "distancia_km": 1328.17}
+{"_id": "ruta_66", "zona": "Oriente", "ciudad_origen": "Concepción", "ciudad_destino": "La Serena", "distancia_km": 1322.65}
+{"_id": "ruta_67", "zona": "Oriente", "ciudad_origen": "Antofagasta", "ciudad_destino": "Puerto Montt", "distancia_km": 928.74}
+{"_id": "ruta_68", "zona": "Poniente", "ciudad_origen": "Santiago", "ciudad_destino": "La Serena", "distancia_km": 1200.6}
+{"_id": "ruta_69", "zona": "Oriente", "ciudad_origen": "Valparaíso", "ciudad_destino": "Puerto Montt", "distancia_km": 605.66}
+{"_id": "ruta_70", "zona": "Norte", "ciudad_origen": "Valparaíso", "ciudad_destino": "Iquique", "distancia_km": 1526.37}
+{"_id": "ruta_71", "zona": "Norte", "ciudad_origen": "Valparaíso", "ciudad_destino": "Puerto Montt", "distancia_km": 759.09}
+{"_id": "ruta_72", "zona": "Oriente", "ciudad_origen": "Santiago", "ciudad_destino": "La Serena", "distancia_km": 257.4}
+{"_id": "ruta_73", "zona": "Norte", "ciudad_origen": "Santiago", "ciudad_destino": "Talca", "distancia_km": 195.63}
+{"_id": "ruta_74", "zona": "Centro", "ciudad_origen": "Temuco", "ciudad_destino": "La Serena", "distancia_km": 1595.88}
+{"_id": "ruta_75", "zona": "Oriente", "ciudad_origen": "Temuco", "ciudad_destino": "Talca", "distancia_km": 1022.6}
+{"_id": "ruta_76", "zona": "Norte", "ciudad_origen": "Santiago", "ciudad_destino": "Puerto Montt", "distancia_km": 828.97}
+{"_id": "ruta_77", "zona": "Sur", "ciudad_origen": "Temuco", "ciudad_destino": "Iquique", "distancia_km": 964.31}
+{"_id": "ruta_78", "zona": "Centro", "ciudad_origen": "Temuco", "ciudad_destino": "Arica", "distancia_km": 1622.97}
+{"_id": "ruta_79", "zona": "Oriente", "ciudad_origen": "Temuco", "ciudad_destino": "Arica", "distancia_km": 1559.9}
+{"_id": "ruta_80", "zona": "Oriente", "ciudad_origen": "Santiago", "ciudad_destino": "Talca", "distancia_km": 855.37}
+{"_id": "ruta_81", "zona": "Oriente", "ciudad_origen": "Antofagasta", "ciudad_destino": "Iquique", "distancia_km": 1893.66}
+{"_id": "ruta_82", "zona": "Oriente", "ciudad_origen": "Concepción", "ciudad_destino": "Puerto Montt", "distancia_km": 628.5}
+{"_id": "ruta_83", "zona": "Norte", "ciudad_origen": "Antofagasta", "ciudad_destino": "Talca", "distancia_km": 1957.55}
+{"_id": "ruta_84", "zona": "Norte", "ciudad_origen": "Santiago", "ciudad_destino": "Talca", "distancia_km": 947.26}
+{"_id": "ruta_85", "zona": "Sur", "ciudad_origen": "Santiago", "ciudad_destino": "La Serena", "distancia_km": 445.06}
+{"_id": "ruta_86", "zona": "Poniente", "ciudad_origen": "Valparaíso", "ciudad_destino": "Talca", "distancia_km": 860.37}
+{"_id": "ruta_87", "zona": "Oriente", "ciudad_origen": "Concepción", "ciudad_destino": "Talca", "distancia_km": 664.18}
+{"_id": "ruta_88", "zona": "Oriente", "ciudad_origen": "Santiago", "ciudad_destino": "La Serena", "distancia_km": 444.56}
+{"_id": "ruta_89", "zona": "Oriente", "ciudad_origen": "Santiago", "ciudad_destino": "Talca", "distancia_km": 613.54}
+{"_id": "ruta_90", "zona": "Oriente", "ciudad_origen": "Antofagasta", "ciudad_destino": "La Serena", "distancia_km": 664.14}
+{"_id": "ruta_91", "zona": "Norte", "ciudad_origen": "Valparaíso", "ciudad_destino": "Talca", "distancia_km": 988.86}
+{"_id": "ruta_92", "zona": "Poniente", "ciudad_origen": "Antofagasta", "ciudad_destino": "Puerto Montt", "distancia_km": 1390.27}
+{"_id": "ruta_93", "zona": "Centro", "ciudad_origen": "Concepción", "ciudad_destino": "Puerto Montt", "distancia_km": 1628.26}
+{"_id": "ruta_94", "zona": "Norte", "ciudad_origen": "Concepción", "ciudad_destino": "Iquique", "distancia_km": 1519.74}
+{"_id": "ruta_95", "zona": "Sur", "ciudad_origen": "Antofagasta", "ciudad_destino": "La Serena", "distancia_km": 1268.51}
+{"_id": "ruta_96", "zona": "Centro", "ciudad_origen": "Valparaíso", "ciudad_destino": "Iquique", "distancia_km": 1731.93}
+{"_id": "ruta_97", "zona": "Poniente", "ciudad_origen": "Antofagasta", "ciudad_destino": "Puerto Montt", "distancia_km": 1222.95}
+{"_id": "ruta_98", "zona": "Poniente", "ciudad_origen": "Valparaíso", "ciudad_destino": "Talca", "distancia_km": 574.55}
+{"_id": "ruta_99", "zona": "Poniente", "ciudad_origen": "Antofagasta", "ciudad_destino": "La Serena", "distancia_km": 1231.64}
+{"_id": "ruta_100", "zona": "Sur", "ciudad_origen": "Concepción", "ciudad_destino": "Talca", "distancia_km": 1928.83}

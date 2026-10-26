@@ -1,0 +1,50 @@
+orden_id,puntaje,comentario
+orden_1,1,Producto en mal estado
+orden_100,1,Tuvo retraso
+orden_13,1,Producto en mal estado
+orden_14,1,Excelente atención
+orden_17,1,Tuvo retraso
+orden_22,1,Excelente atención
+orden_45,1,Recomendaría
+orden_50,1,Tuvo retraso
+orden_56,1,Excelente atención
+orden_6,1,Excelente atención
+orden_67,1,Entrega a tiempo
+orden_68,1,Tuvo retraso
+orden_69,1,Entrega a tiempo
+orden_77,1,Recomendaría
+orden_83,1,Muy buen servicio
+orden_86,1,Muy buen servicio
+orden_89,1,Excelente atención
+orden_9,1,Producto en mal estado
+orden_93,1,Muy buen servicio
+orden_99,1,Tuvo retraso
+orden_11,2,Producto en mal estado
+orden_18,2,Excelente atención
+orden_21,2,Entrega a tiempo
+orden_27,2,Recomendaría
+orden_29,2,Excelente atención
+orden_32,2,Muy buen servicio
+orden_35,2,Producto en mal estado
+orden_39,2,Excelente atención
+orden_43,2,Muy buen servicio
+orden_48,2,Muy buen servicio
+orden_61,2,Tuvo retraso
+orden_63,2,Muy buen servicio
+orden_64,2,Muy buen servicio
+orden_76,2,Producto en mal estado
+orden_90,2,Tuvo retraso
+orden_91,2,Muy buen servicio
+orden_96,2,Tuvo retraso
+orden_31,3,Producto en mal estado
+orden_42,3,Producto en mal estado
+orden_54,3,Producto en mal estado
+orden_19,4,Tuvo retraso
+orden_28,4,Tuvo retraso
+orden_34,4,Tuvo retraso
+orden_60,4,Tuvo retraso
+orden_38,5,Producto en mal estado
+orden_40,5,Producto en mal estado
+orden_71,5,Producto en mal estado
+orden_81,5,Tuvo retraso
+orden_82,5,Tuvo retraso

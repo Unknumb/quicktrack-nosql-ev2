@@ -1,0 +1,6 @@
+zona,km_promedio_zona,top3,top3_km
+Centro,1468.0,"['Antofagasta → Arica', 'Temuco → Iquique', 'Valparaíso → Iquique']","[1995.41, 1924.79, 1731.93]"
+Poniente,1283.1,"['Valparaíso → La Serena', 'Antofagasta → La Serena', 'Temuco → Puerto Montt']","[1948.11, 1898.47, 1823.4]"
+Sur,1046.8,"['Concepción → Talca', 'Concepción → Puerto Montt', 'Antofagasta → Arica']","[1928.83, 1582.21, 1328.17]"
+Oriente,985.2,"['Temuco → Iquique', 'Concepción → Iquique', 'Valparaíso → Arica']","[1963.06, 1952.23, 1945.84]"
+Norte,982.9,"['Antofagasta → Talca', 'Santiago → Iquique', 'Valparaíso → La Serena']","[1957.55, 1909.22, 1729.09]"

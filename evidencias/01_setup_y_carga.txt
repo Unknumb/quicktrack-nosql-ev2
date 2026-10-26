@@ -1,0 +1,25 @@
+2026-10-25 20:52:34,180 | INFO    | db | Conexión OK | servidor MongoDB 8.0.34 | ping 871.7 ms | base 'QuickTrack'
+2026-10-25 20:52:34,614 | INFO    | setup | Colección 'clientes' creada con $jsonSchema e índices ['_id_', 'ux_correo']
+2026-10-25 20:52:35,045 | INFO    | setup | Colección 'rutas' creada con $jsonSchema e índices ['_id_', 'ix_zona_distancia']
+2026-10-25 20:52:35,668 | INFO    | setup | Colección 'ordenes_entrega' creada con $jsonSchema e índices ['_id_', 'ix_zona_estado_total', 'ix_cliente', 'ix_fecha_envio']
+2026-10-25 20:52:36,099 | INFO    | setup | Colección 'seguimiento' creada con $jsonSchema e índices ['_id_', 'ux_orden']
+2026-10-25 20:52:36,629 | INFO    | setup | Colección 'valoraciones' creada con $jsonSchema e índices ['_id_', 'ux_orden', 'ix_puntaje']
+2026-10-25 20:52:37,765 | INFO    | setup | Insertados 100 documentos en 'clientes'
+2026-10-25 20:52:38,729 | INFO    | setup | Insertados 100 documentos en 'rutas'
+2026-10-25 20:52:39,725 | INFO    | setup | Insertados 100 documentos en 'ordenes_entrega'
+2026-10-25 20:52:40,724 | INFO    | setup | Insertados 100 documentos en 'seguimiento'
+2026-10-25 20:52:41,723 | INFO    | setup | Insertados 100 documentos en 'valoraciones'
+
+=== VERIFICACIÓN DE CARGA ===
+colección           archivo   en BD  estado
+clientes                100     100  OK
+rutas                   100     100  OK
+ordenes_entrega         100     100  OK
+seguimiento             100     100  OK
+valoraciones            100     100  OK
+
+Ejemplo de documento en ordenes_entrega:
+{'_id': 'orden_1', 'cliente_id': 'cli_99', 'ruta_id': 'ruta_43', 'fecha_envio': datetime.datetime(2022, 10, 18, 0, 0), 'estado': 'Cancelado', 'medio_pago': 'Transferencia', 'total': 134152.77, 'zona': 'Centro'}
+
+Ejemplo de documento en seguimiento:
+{'_id': 'seg_1', 'orden_id': 'orden_1', 'estado_actual': 'En preparación', 'historial': [{'estado': 'En preparación', 'fecha': datetime.datetime(2024, 6, 21, 0, 0)}, {'estado': 'Despachado', 'fecha': datetime.datetime(2024, 6, 23, 0, 0)}, {'estado': 'En tránsito', 'fecha': datetime.datetime(2024, 6, 25, 0, 0)}]}

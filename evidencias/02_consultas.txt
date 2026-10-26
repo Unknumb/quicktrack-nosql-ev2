@@ -1,0 +1,112 @@
+2026-10-25 20:52:44,201 | INFO    | db | Conexión OK | servidor MongoDB 8.0.34 | ping 821.6 ms | base 'QuickTrack'
+
+====================================================================================================
+C1_entregas_norte_alto_valor
+Requerimiento: Logística necesita las órdenes ENTREGADAS de la zona Norte con total > $100.000, de mayor a menor valor (filtro + proyección + orden).
+Resultados: 3 documentos | tiempo: 76.3 ms
+----------------------------------------------------------------------------------------------------
+     _id cliente_id fecha_envio     total
+orden_28     cli_11  2024-02-27 197977.37
+orden_97     cli_40  2022-12-23 176107.92
+orden_64     cli_91  2022-01-23 106409.91
+2026-10-25 20:52:44,283 | INFO    | consultas | C1_entregas_norte_alto_valor -> 3 docs en 76.3 ms
+
+====================================================================================================
+C2_pendientes_efectivo_2024
+Requerimiento: Finanzas quiere las órdenes de 2024 pagadas en Efectivo que siguen 'En preparación' o 'En tránsito' (búsqueda compuesta con $and implícito, $in y rango de fechas).
+Resultados: 4 documentos | tiempo: 79.1 ms
+----------------------------------------------------------------------------------------------------
+     _id fecha_envio         estado     total    zona
+orden_41  2024-01-28 En preparación  62126.82     Sur
+orden_71  2024-03-20 En preparación 109499.89 Oriente
+orden_86  2024-06-13 En preparación 165364.20 Oriente
+orden_55  2024-06-22    En tránsito  73814.03 Oriente
+2026-10-25 20:52:44,367 | INFO    | consultas | C2_pendientes_efectivo_2024 -> 4 docs en 79.1 ms
+
+====================================================================================================
+C3_valoraciones_criticas
+Requerimiento: Atención al cliente necesita las valoraciones críticas: puntaje <= 2 O comentario de retraso/producto dañado (operador $or + $lte + $in).
+Resultados: 49 documentos | tiempo: 76.4 ms
+----------------------------------------------------------------------------------------------------
+ orden_id  puntaje             comentario
+  orden_1        1 Producto en mal estado
+orden_100        1           Tuvo retraso
+ orden_13        1 Producto en mal estado
+ orden_14        1     Excelente atención
+ orden_17        1           Tuvo retraso
+ orden_22        1     Excelente atención
+ orden_45        1           Recomendaría
+ orden_50        1           Tuvo retraso
+ orden_56        1     Excelente atención
+  orden_6        1     Excelente atención
+ orden_67        1       Entrega a tiempo
+ orden_68        1           Tuvo retraso
+ orden_69        1       Entrega a tiempo
+ orden_77        1           Recomendaría
+ orden_83        1      Muy buen servicio
+2026-10-25 20:52:44,447 | INFO    | consultas | C3_valoraciones_criticas -> 49 docs en 76.4 ms
+
+====================================================================================================
+C4_rutas_largas_por_zona
+Requerimiento: Planificación de rutas: las 3 rutas más largas de cada zona para revisar optimización (agregación $sort + $group + $slice).
+Resultados: 5 documentos | tiempo: 75.8 ms
+----------------------------------------------------------------------------------------------------
+    zona  km_promedio_zona                                                                     top3                     top3_km
+  Centro            1468.0            [Antofagasta → Arica, Temuco → Iquique, Valparaíso → Iquique] [1995.41, 1924.79, 1731.93]
+Poniente            1283.1 [Valparaíso → La Serena, Antofagasta → La Serena, Temuco → Puerto Montt]  [1948.11, 1898.47, 1823.4]
+     Sur            1046.8     [Concepción → Talca, Concepción → Puerto Montt, Antofagasta → Arica] [1928.83, 1582.21, 1328.17]
+ Oriente             985.2             [Temuco → Iquique, Concepción → Iquique, Valparaíso → Arica] [1963.06, 1952.23, 1945.84]
+   Norte             982.9        [Antofagasta → Talca, Santiago → Iquique, Valparaíso → La Serena] [1957.55, 1909.22, 1729.09]
+2026-10-25 20:52:44,529 | INFO    | consultas | C4_rutas_largas_por_zona -> 5 docs en 75.8 ms
+
+====================================================================================================
+C5_zonas_criticas
+Requerimiento: Gerencia: KPI por zona — n° órdenes, % canceladas, puntaje promedio y % con comentario de retraso ($lookup ordenes→valoraciones + $group + $cond).
+Resultados: 5 documentos | tiempo: 83.5 ms
+----------------------------------------------------------------------------------------------------
+ ordenes     zona    ventas  pct_canceladas  pct_retraso  puntaje_prom
+      17   Centro 1741047.0            47.1         17.6          2.71
+      13      Sur 1228344.0            23.1         15.4          3.00
+      22    Norte 2698099.0            36.4         13.6          3.00
+      22 Poniente 2751194.0             9.1          4.5          3.14
+      26  Oriente 2520929.0             7.7         19.2          3.35
+2026-10-25 20:52:44,617 | INFO    | consultas | C5_zonas_criticas -> 5 docs en 83.5 ms
+
+====================================================================================================
+C6_satisfaccion_medio_pago
+Requerimiento: Marketing: % de clientes que recomiendan (puntaje >= 4) según medio de pago.
+Resultados: 3 documentos | tiempo: 80.1 ms
+----------------------------------------------------------------------------------------------------
+ valoraciones    medio_pago  pct_recomienda  puntaje_prom
+           32 Transferencia            50.0          3.12
+           34       Tarjeta            47.1          3.06
+           34      Efectivo            38.2          3.03
+2026-10-25 20:52:44,701 | INFO    | consultas | C6_satisfaccion_medio_pago -> 3 docs en 80.1 ms
+
+====================================================================================================
+C7_tiempo_entrega_por_zona
+Requerimiento: Cumplimiento de plazos: días promedio desde el primer evento hasta 'Entregado' por zona ($elemMatch implícito, $filter, $dateDiff).
+Resultados: 5 documentos | tiempo: 76.4 ms
+----------------------------------------------------------------------------------------------------
+ entregas  dias_max     zona  dias_prom
+        8         6    Norte        6.0
+        6         6      Sur        6.0
+       10         6  Oriente        6.0
+        7         6 Poniente        6.0
+        2         6   Centro        6.0
+2026-10-25 20:52:44,782 | INFO    | consultas | C7_tiempo_entrega_por_zona -> 5 docs en 76.4 ms
+
+====================================================================================================
+C8_top_clientes
+Requerimiento: Comercial: top 5 clientes por monto total enviado, con nombre y correo ($group + $lookup clientes + $limit).
+Resultados: 5 documentos | tiempo: 78.3 ms
+----------------------------------------------------------------------------------------------------
+ ordenes cliente_id                   nombre                         correo    monto
+       3      cli_4                Gema Pino            veraperal@gmail.com 480556.0
+       3     cli_71           Dan Goñi Uribe dianacarmona@guitart-perera.es 372793.0
+       2     cli_58       Eric Anglada Abril          candido91@estevez.net 341145.0
+       2      cli_3          Natalio de Pera  jose-francisconarvaez@luis.es 326924.0
+       3     cli_35 Trinidad Cortina-Arribas          angelgabino@gmail.com 310065.0
+2026-10-25 20:52:44,865 | INFO    | consultas | C8_top_clientes -> 5 docs en 78.3 ms
+
+CSV exportados en: /Users/unk/Desktop/semestre 6 /base de datos no /ev2/quicktrack-nosql/resultados

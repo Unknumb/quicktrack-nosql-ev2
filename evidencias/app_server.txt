@@ -1,0 +1,133 @@
+2026-10-25 20:54:44,731 | INFO    | db | Conexión OK | servidor MongoDB 8.0.34 | ping 933.7 ms | base 'QuickTrack'
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5050
+[33mPress CTRL+C to quit[0m
+2026-10-25 20:54:48,232 | INFO    | api | [423f87a7] GET /health -> 200 (601.0 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:48] "GET /health HTTP/1.1" 200 -
+2026-10-25 20:54:48,420 | INFO    | api | [cd4a37b2] GET /ordenes?zona=Norte&estado=Entregado&limite=3 -> 200 (181.5 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:48] "GET /ordenes?zona=Norte&estado=Entregado&limite=3 HTTP/1.1" 200 -
+2026-10-25 20:54:48,507 | INFO    | api | [24fe7817] GET /kpis/zonas -> 200 (80.8 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:48] "GET /kpis/zonas HTTP/1.1" 200 -
+2026-10-25 20:54:48,743 | INFO    | servicio | Cliente creado cli_102
+2026-10-25 20:54:48,743 | INFO    | api | [4e1fa458] POST /clientes -> 201 (231.0 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:48] "[35m[1mPOST /clientes HTTP/1.1[0m" 201 -
+2026-10-25 20:54:49,204 | INFO    | servicio | Orden creada orden_102 (cliente cli_102, ruta ruta_5)
+2026-10-25 20:54:49,204 | INFO    | api | [faed7540] POST /ordenes -> 201 (454.7 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:49] "[35m[1mPOST /ordenes HTTP/1.1[0m" 201 -
+2026-10-25 20:54:49,285 | INFO    | api | [2dc7b8c6] GET /ordenes/orden_102 -> 200 (74.1 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:49] "GET /ordenes/orden_102 HTTP/1.1" 200 -
+2026-10-25 20:54:49,592 | INFO    | servicio | Orden orden_102: En preparación -> Despachado
+2026-10-25 20:54:49,592 | INFO    | api | [8736a02f] PATCH /ordenes/orden_102/estado -> 200 (301.9 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:49] "PATCH /ordenes/orden_102/estado HTTP/1.1" 200 -
+2026-10-25 20:54:49,916 | INFO    | servicio | Orden orden_102: Despachado -> En tránsito
+2026-10-25 20:54:49,916 | INFO    | api | [378ba17c] PATCH /ordenes/orden_102/estado -> 200 (317.9 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:49] "PATCH /ordenes/orden_102/estado HTTP/1.1" 200 -
+2026-10-25 20:54:50,225 | INFO    | servicio | Orden orden_102: En tránsito -> Entregado
+2026-10-25 20:54:50,226 | INFO    | api | [e4a030da] PATCH /ordenes/orden_102/estado -> 200 (304.2 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:50] "PATCH /ordenes/orden_102/estado HTTP/1.1" 200 -
+2026-10-25 20:54:50,380 | INFO    | servicio | Valoración creada para orden_102 (puntaje 4)
+2026-10-25 20:54:50,381 | INFO    | api | [78a140cf] POST /valoraciones -> 201 (149.3 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:50] "[35m[1mPOST /valoraciones HTTP/1.1[0m" 201 -
+2026-10-25 20:54:50,458 | INFO    | api | [8a893f6f] GET /ordenes/orden_102 -> 200 (72.2 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:50] "GET /ordenes/orden_102 HTTP/1.1" 200 -
+2026-10-25 20:54:50,464 | WARNING | api | [810ff143] ErrorValidacion: 'total' debe ser un número mayor a 0
+2026-10-25 20:54:50,464 | INFO    | api | [810ff143] POST /ordenes -> 400 (0.4 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:50] "[31m[1mPOST /ordenes HTTP/1.1[0m" 400 -
+2026-10-25 20:54:50,541 | WARNING | api | [d3b369c1] NoEncontrado: El cliente cli_00000 no existe
+2026-10-25 20:54:50,542 | INFO    | api | [d3b369c1] POST /ordenes -> 404 (74.1 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:50] "[33mPOST /ordenes HTTP/1.1[0m" 404 -
+2026-10-25 20:54:50,621 | WARNING | api | [f1067943] Conflicto: Transición no permitida: 'Entregado' -> 'En preparación'. Permitidas: []
+2026-10-25 20:54:50,621 | INFO    | api | [f1067943] PATCH /ordenes/orden_102/estado -> 409 (74.2 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:50] "[31m[1mPATCH /ordenes/orden_102/estado HTTP/1.1[0m" 409 -
+2026-10-25 20:54:50,627 | WARNING | api | [29b952b1] ErrorValidacion: 'zona' debe ser una de ['Norte', 'Centro', 'Sur', 'Oriente', 'Poniente']
+2026-10-25 20:54:50,627 | INFO    | api | [29b952b1] GET /ordenes?zona=Marte -> 400 (0.3 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:50] "[31m[1mGET /ordenes?zona=Marte HTTP/1.1[0m" 400 -
+2026-10-25 20:54:50,701 | WARNING | api | [be7b821e] NoEncontrado: La orden orden_inexistente no existe
+2026-10-25 20:54:50,702 | INFO    | api | [be7b821e] GET /ordenes/orden_inexistente -> 404 (71.5 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:50] "[33mGET /ordenes/orden_inexistente HTTP/1.1[0m" 404 -
+2026-10-25 20:54:51,089 | INFO    | servicio | Orden orden_102 eliminada en cascada: {'ordenes_entrega': 1, 'seguimiento': 1, 'valoraciones': 1}
+2026-10-25 20:54:51,089 | INFO    | api | [03075243] DELETE /ordenes/orden_102 -> 200 (382.7 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:51] "DELETE /ordenes/orden_102 HTTP/1.1" 200 -
+2026-10-25 20:54:51,168 | WARNING | api | [fd3a714f] NoEncontrado: La orden orden_102 no existe
+2026-10-25 20:54:51,168 | INFO    | api | [fd3a714f] GET /ordenes/orden_102 -> 404 (73.6 ms)
+127.0.0.1 - - [25/Oct/2026 20:54:51] "[33mGET /ordenes/orden_102 HTTP/1.1[0m" 404 -
+2026-10-25 21:13:16,647 | INFO    | api | [a2263633] GET /health -> 200 (451.0 ms)
+127.0.0.1 - - [25/Oct/2026 21:13:16] "GET /health HTTP/1.1" 200 -
+2026-10-25 21:15:13,742 | INFO    | api | [98fc8131] GET /health -> 200 (464.0 ms)
+127.0.0.1 - - [25/Oct/2026 21:15:13] "GET /health HTTP/1.1" 200 -
+2026-10-25 21:16:07,632 | WARNING | api | [d1e1c2e8] ErrorValidacion: 'cliente_id' debe ser texto de 4 a 30 caracteres
+2026-10-25 21:16:07,632 | INFO    | api | [d1e1c2e8] POST /ordenes -> 400 (0.7 ms)
+127.0.0.1 - - [25/Oct/2026 21:16:07] "[31m[1mPOST /ordenes HTTP/1.1[0m" 400 -
+2026-10-25 21:16:24,518 | WARNING | api | [e7056e30] ErrorValidacion: 'cliente_id' debe ser texto de 4 a 30 caracteres
+2026-10-25 21:16:24,518 | INFO    | api | [e7056e30] POST /ordenes -> 400 (0.6 ms)
+127.0.0.1 - - [25/Oct/2026 21:16:24] "[31m[1mPOST /ordenes HTTP/1.1[0m" 400 -
+2026-10-25 21:16:37,374 | WARNING | api | [c6f2724d] NoEncontrado: El cliente 6767 no existe
+2026-10-25 21:16:37,375 | INFO    | api | [c6f2724d] POST /ordenes -> 404 (75.0 ms)
+127.0.0.1 - - [25/Oct/2026 21:16:37] "[33mPOST /ordenes HTTP/1.1[0m" 404 -
+2026-10-25 21:16:57,388 | INFO    | servicio | Cliente creado cli_103
+2026-10-25 21:16:57,388 | INFO    | api | [eaf9fa6d] POST /clientes -> 201 (240.9 ms)
+127.0.0.1 - - [25/Oct/2026 21:16:57] "[35m[1mPOST /clientes HTTP/1.1[0m" 201 -
+2026-10-25 21:17:21,313 | INFO    | servicio | Orden creada orden_103 (cliente cli_103, ruta ruta_10)
+2026-10-25 21:17:21,314 | INFO    | api | [afa629f3] POST /ordenes -> 201 (481.8 ms)
+127.0.0.1 - - [25/Oct/2026 21:17:21] "[35m[1mPOST /ordenes HTTP/1.1[0m" 201 -
+2026-10-25 21:17:38,887 | INFO    | api | [56b615fd] GET /ordenes/orden_103 -> 200 (96.5 ms)
+127.0.0.1 - - [25/Oct/2026 21:17:38] "GET /ordenes/orden_103 HTTP/1.1" 200 -
+2026-10-25 21:18:22,632 | WARNING | api | [081fe5de] Conflicto: Transición no permitida: 'En tránsito' -> 'En preparación'. Permitidas: ['Entregado']
+2026-10-25 21:18:22,632 | INFO    | api | [081fe5de] PATCH /ordenes/orden_3/estado -> 409 (74.7 ms)
+127.0.0.1 - - [25/Oct/2026 21:18:22] "[31m[1mPATCH /ordenes/orden_3/estado HTTP/1.1[0m" 409 -
+2026-10-25 21:19:31,405 | INFO    | api | [77cd319d] GET /health -> 200 (462.5 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:31] "GET /health HTTP/1.1" 200 -
+2026-10-25 21:19:31,582 | INFO    | api | [ad13dd41] GET /ordenes?zona=Norte&estado=Entregado&limite=5 -> 200 (150.6 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:31] "GET /ordenes?zona=Norte&estado=Entregado&limite=5 HTTP/1.1" 200 -
+2026-10-25 21:19:31,757 | INFO    | api | [c55db9a0] GET /ordenes?min_total=150000&limite=10 -> 200 (161.4 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:31] "GET /ordenes?min_total=150000&limite=10 HTTP/1.1" 200 -
+2026-10-25 21:19:31,845 | INFO    | api | [d366d44b] GET /ordenes/orden_2 -> 200 (75.2 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:31] "GET /ordenes/orden_2 HTTP/1.1" 200 -
+2026-10-25 21:19:31,936 | INFO    | api | [567bb11e] GET /kpis/zonas -> 200 (78.7 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:31] "GET /kpis/zonas HTTP/1.1" 200 -
+2026-10-25 21:19:32,186 | INFO    | servicio | Cliente creado cli_104
+2026-10-25 21:19:32,186 | INFO    | api | [c7090119] POST /clientes -> 201 (236.7 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:32] "[35m[1mPOST /clientes HTTP/1.1[0m" 201 -
+2026-10-25 21:19:32,647 | INFO    | servicio | Orden creada orden_104 (cliente cli_104, ruta ruta_10)
+2026-10-25 21:19:32,648 | INFO    | api | [8c586afe] POST /ordenes -> 201 (450.6 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:32] "[35m[1mPOST /ordenes HTTP/1.1[0m" 201 -
+2026-10-25 21:19:32,735 | INFO    | api | [9e49c6a7] GET /ordenes/orden_104 -> 200 (72.5 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:32] "GET /ordenes/orden_104 HTTP/1.1" 200 -
+2026-10-25 21:19:33,051 | INFO    | servicio | Orden orden_104: En preparación -> Despachado
+2026-10-25 21:19:33,051 | INFO    | api | [741fcf80] PATCH /ordenes/orden_104/estado -> 200 (303.9 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:33] "PATCH /ordenes/orden_104/estado HTTP/1.1" 200 -
+2026-10-25 21:19:33,364 | INFO    | servicio | Orden orden_104: Despachado -> En tránsito
+2026-10-25 21:19:33,364 | INFO    | api | [f15ac34a] PATCH /ordenes/orden_104/estado -> 200 (301.2 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:33] "PATCH /ordenes/orden_104/estado HTTP/1.1" 200 -
+2026-10-25 21:19:33,681 | INFO    | servicio | Orden orden_104: En tránsito -> Entregado
+2026-10-25 21:19:33,681 | INFO    | api | [e770f14c] PATCH /ordenes/orden_104/estado -> 200 (304.7 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:33] "PATCH /ordenes/orden_104/estado HTTP/1.1" 200 -
+2026-10-25 21:19:33,842 | INFO    | servicio | Valoración creada para orden_104 (puntaje 5)
+2026-10-25 21:19:33,843 | INFO    | api | [3a673d46] POST /valoraciones -> 201 (149.9 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:33] "[35m[1mPOST /valoraciones HTTP/1.1[0m" 201 -
+2026-10-25 21:19:34,225 | INFO    | servicio | Orden orden_104 eliminada en cascada: {'ordenes_entrega': 1, 'seguimiento': 1, 'valoraciones': 1}
+2026-10-25 21:19:34,225 | INFO    | api | [b02ad908] DELETE /ordenes/orden_104 -> 200 (369.9 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:34] "DELETE /ordenes/orden_104 HTTP/1.1" 200 -
+2026-10-25 21:19:34,341 | WARNING | api | [7f4eb031] NoEncontrado: La orden orden_104 no existe
+2026-10-25 21:19:34,341 | INFO    | api | [7f4eb031] GET /ordenes/orden_104 -> 404 (102.8 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:34] "[33mGET /ordenes/orden_104 HTTP/1.1[0m" 404 -
+2026-10-25 21:19:34,354 | WARNING | api | [7595cf9d] ErrorValidacion: 'total' debe ser un número mayor a 0
+2026-10-25 21:19:34,354 | INFO    | api | [7595cf9d] POST /ordenes -> 400 (0.4 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:34] "[31m[1mPOST /ordenes HTTP/1.1[0m" 400 -
+2026-10-25 21:19:34,440 | WARNING | api | [cb45f7f7] NoEncontrado: El cliente cli_00000 no existe
+2026-10-25 21:19:34,440 | INFO    | api | [cb45f7f7] POST /ordenes -> 404 (75.0 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:34] "[33mPOST /ordenes HTTP/1.1[0m" 404 -
+2026-10-25 21:19:34,453 | WARNING | api | [0f567497] ErrorValidacion: 'zona' debe ser una de ['Norte', 'Centro', 'Sur', 'Oriente', 'Poniente']
+2026-10-25 21:19:34,453 | INFO    | api | [0f567497] GET /ordenes?zona=Marte -> 400 (0.5 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:34] "[31m[1mGET /ordenes?zona=Marte HTTP/1.1[0m" 400 -
+2026-10-25 21:19:34,564 | WARNING | api | [b2e75bef] Conflicto: Ya existe un cliente con el correo veraperal@gmail.com
+2026-10-25 21:19:34,564 | INFO    | api | [b2e75bef] POST /clientes -> 409 (98.6 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:34] "[31m[1mPOST /clientes HTTP/1.1[0m" 409 -
+2026-10-25 21:19:34,653 | WARNING | api | [a0b1e6d6] Conflicto: Transición no permitida: 'En tránsito' -> 'En preparación'. Permitidas: ['Entregado']
+2026-10-25 21:19:34,653 | INFO    | api | [a0b1e6d6] PATCH /ordenes/orden_3/estado -> 409 (72.9 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:34] "[31m[1mPATCH /ordenes/orden_3/estado HTTP/1.1[0m" 409 -
+2026-10-25 21:19:34,665 | WARNING | api | [3b667578] ErrorValidacion: 'puntaje' debe ser un entero entre 1 y 5
+2026-10-25 21:19:34,665 | INFO    | api | [3b667578] POST /valoraciones -> 400 (0.5 ms)
+127.0.0.1 - - [25/Oct/2026 21:19:34] "[31m[1mPOST /valoraciones HTTP/1.1[0m" 400 -

@@ -1,0 +1,100 @@
+{"_id": "orden_1", "cliente_id": "cli_99", "ruta_id": "ruta_43", "fecha_envio": "2022-10-18T00:00:00", "estado": "Cancelado", "medio_pago": "Transferencia", "total": 134152.77}
+{"_id": "orden_2", "cliente_id": "cli_73", "ruta_id": "ruta_99", "fecha_envio": "2024-06-05T00:00:00", "estado": "Entregado", "medio_pago": "Tarjeta", "total": 165509.2}
+{"_id": "orden_3", "cliente_id": "cli_31", "ruta_id": "ruta_93", "fecha_envio": "2022-03-16T00:00:00", "estado": "Entregado", "medio_pago": "Efectivo", "total": 111841.49}
+{"_id": "orden_4", "cliente_id": "cli_56", "ruta_id": "ruta_70", "fecha_envio": "2022-08-07T00:00:00", "estado": "En preparación", "medio_pago": "Transferencia", "total": 151191.2}
+{"_id": "orden_5", "cliente_id": "cli_86", "ruta_id": "ruta_36", "fecha_envio": "2023-09-25T00:00:00", "estado": "En tránsito", "medio_pago": "Transferencia", "total": 170785.29}
+{"_id": "orden_6", "cliente_id": "cli_16", "ruta_id": "ruta_20", "fecha_envio": "2023-01-09T00:00:00", "estado": "Entregado", "medio_pago": "Tarjeta", "total": 142059.52}
+{"_id": "orden_7", "cliente_id": "cli_72", "ruta_id": "ruta_58", "fecha_envio": "2022-02-08T00:00:00", "estado": "Entregado", "medio_pago": "Tarjeta", "total": 55832.56}
+{"_id": "orden_8", "cliente_id": "cli_68", "ruta_id": "ruta_44", "fecha_envio": "2023-05-07T00:00:00", "estado": "Cancelado", "medio_pago": "Tarjeta", "total": 88734.89}
+{"_id": "orden_9", "cliente_id": "cli_22", "ruta_id": "ruta_36", "fecha_envio": "2023-02-18T00:00:00", "estado": "En preparación", "medio_pago": "Tarjeta", "total": 121749.79}
+{"_id": "orden_10", "cliente_id": "cli_1", "ruta_id": "ruta_94", "fecha_envio": "2023-04-10T00:00:00", "estado": "En preparación", "medio_pago": "Efectivo", "total": 197116.52}
+{"_id": "orden_11", "cliente_id": "cli_75", "ruta_id": "ruta_49", "fecha_envio": "2024-01-17T00:00:00", "estado": "Entregado", "medio_pago": "Tarjeta", "total": 75995.81}
+{"_id": "orden_12", "cliente_id": "cli_13", "ruta_id": "ruta_93", "fecha_envio": "2023-05-08T00:00:00", "estado": "Entregado", "medio_pago": "Efectivo", "total": 108077.34}
+{"_id": "orden_13", "cliente_id": "cli_77", "ruta_id": "ruta_12", "fecha_envio": "2024-05-05T00:00:00", "estado": "En preparación", "medio_pago": "Tarjeta", "total": 106763.04}
+{"_id": "orden_14", "cliente_id": "cli_71", "ruta_id": "ruta_42", "fecha_envio": "2022-01-16T00:00:00", "estado": "Entregado", "medio_pago": "Tarjeta", "total": 168699.7}
+{"_id": "orden_15", "cliente_id": "cli_50", "ruta_id": "ruta_60", "fecha_envio": "2024-03-14T00:00:00", "estado": "Cancelado", "medio_pago": "Efectivo", "total": 83084.24}
+{"_id": "orden_16", "cliente_id": "cli_59", "ruta_id": "ruta_38", "fecha_envio": "2022-02-05T00:00:00", "estado": "En tránsito", "medio_pago": "Efectivo", "total": 22577.55}
+{"_id": "orden_17", "cliente_id": "cli_35", "ruta_id": "ruta_49", "fecha_envio": "2023-05-14T00:00:00", "estado": "En tránsito", "medio_pago": "Transferencia", "total": 135211.93}
+{"_id": "orden_18", "cliente_id": "cli_29", "ruta_id": "ruta_39", "fecha_envio": "2024-03-16T00:00:00", "estado": "Cancelado", "medio_pago": "Efectivo", "total": 171501.06}
+{"_id": "orden_19", "cliente_id": "cli_63", "ruta_id": "ruta_51", "fecha_envio": "2023-02-03T00:00:00", "estado": "Cancelado", "medio_pago": "Efectivo", "total": 140914.68}
+{"_id": "orden_20", "cliente_id": "cli_96", "ruta_id": "ruta_94", "fecha_envio": "2022-07-05T00:00:00", "estado": "Cancelado", "medio_pago": "Tarjeta", "total": 46057.64}
+{"_id": "orden_21", "cliente_id": "cli_36", "ruta_id": "ruta_65", "fecha_envio": "2023-04-24T00:00:00", "estado": "En preparación", "medio_pago": "Efectivo", "total": 169630.46}
+{"_id": "orden_22", "cliente_id": "cli_71", "ruta_id": "ruta_68", "fecha_envio": "2024-04-10T00:00:00", "estado": "En tránsito", "medio_pago": "Transferencia", "total": 190328.01}
+{"_id": "orden_23", "cliente_id": "cli_20", "ruta_id": "ruta_20", "fecha_envio": "2022-09-23T00:00:00", "estado": "Cancelado", "medio_pago": "Tarjeta", "total": 172305.02}
+{"_id": "orden_24", "cliente_id": "cli_68", "ruta_id": "ruta_47", "fecha_envio": "2022-06-18T00:00:00", "estado": "En tránsito", "medio_pago": "Tarjeta", "total": 101127.88}
+{"_id": "orden_25", "cliente_id": "cli_90", "ruta_id": "ruta_12", "fecha_envio": "2023-05-12T00:00:00", "estado": "Cancelado", "medio_pago": "Transferencia", "total": 151723.26}
+{"_id": "orden_26", "cliente_id": "cli_27", "ruta_id": "ruta_98", "fecha_envio": "2022-01-15T00:00:00", "estado": "Entregado", "medio_pago": "Efectivo", "total": 182075.53}
+{"_id": "orden_27", "cliente_id": "cli_19", "ruta_id": "ruta_45", "fecha_envio": "2023-09-15T00:00:00", "estado": "Cancelado", "medio_pago": "Transferencia", "total": 70713.5}
+{"_id": "orden_28", "cliente_id": "cli_11", "ruta_id": "ruta_60", "fecha_envio": "2024-02-27T00:00:00", "estado": "Entregado", "medio_pago": "Transferencia", "total": 197977.37}
+{"_id": "orden_29", "cliente_id": "cli_91", "ruta_id": "ruta_94", "fecha_envio": "2023-05-05T00:00:00", "estado": "En tránsito", "medio_pago": "Transferencia", "total": 131550.6}
+{"_id": "orden_30", "cliente_id": "cli_3", "ruta_id": "ruta_35", "fecha_envio": "2023-02-21T00:00:00", "estado": "En preparación", "medio_pago": "Tarjeta", "total": 174983.73}
+{"_id": "orden_31", "cliente_id": "cli_58", "ruta_id": "ruta_12", "fecha_envio": "2023-12-25T00:00:00", "estado": "En preparación", "medio_pago": "Transferencia", "total": 188583.54}
+{"_id": "orden_32", "cliente_id": "cli_88", "ruta_id": "ruta_51", "fecha_envio": "2022-02-09T00:00:00", "estado": "En preparación", "medio_pago": "Efectivo", "total": 18594.78}
+{"_id": "orden_33", "cliente_id": "cli_74", "ruta_id": "ruta_93", "fecha_envio": "2022-02-13T00:00:00", "estado": "En tránsito", "medio_pago": "Tarjeta", "total": 60115.39}
+{"_id": "orden_34", "cliente_id": "cli_59", "ruta_id": "ruta_76", "fecha_envio": "2024-03-20T00:00:00", "estado": "Cancelado", "medio_pago": "Transferencia", "total": 48689.63}
+{"_id": "orden_35", "cliente_id": "cli_55", "ruta_id": "ruta_99", "fecha_envio": "2022-09-21T00:00:00", "estado": "En tránsito", "medio_pago": "Efectivo", "total": 190106.46}
+{"_id": "orden_36", "cliente_id": "cli_88", "ruta_id": "ruta_26", "fecha_envio": "2022-11-16T00:00:00", "estado": "En tránsito", "medio_pago": "Efectivo", "total": 170947.69}
+{"_id": "orden_37", "cliente_id": "cli_43", "ruta_id": "ruta_24", "fecha_envio": "2022-04-21T00:00:00", "estado": "Cancelado", "medio_pago": "Transferencia", "total": 18470.88}
+{"_id": "orden_38", "cliente_id": "cli_58", "ruta_id": "ruta_21", "fecha_envio": "2023-05-09T00:00:00", "estado": "Entregado", "medio_pago": "Tarjeta", "total": 152561.69}
+{"_id": "orden_39", "cliente_id": "cli_1", "ruta_id": "ruta_60", "fecha_envio": "2022-11-03T00:00:00", "estado": "En preparación", "medio_pago": "Efectivo", "total": 82867.02}
+{"_id": "orden_40", "cliente_id": "cli_48", "ruta_id": "ruta_62", "fecha_envio": "2023-10-29T00:00:00", "estado": "Entregado", "medio_pago": "Tarjeta", "total": 44600.71}
+{"_id": "orden_41", "cliente_id": "cli_79", "ruta_id": "ruta_77", "fecha_envio": "2024-01-28T00:00:00", "estado": "En preparación", "medio_pago": "Efectivo", "total": 62126.82}
+{"_id": "orden_42", "cliente_id": "cli_59", "ruta_id": "ruta_11", "fecha_envio": "2022-01-21T00:00:00", "estado": "Entregado", "medio_pago": "Tarjeta", "total": 81640.21}
+{"_id": "orden_43", "cliente_id": "cli_69", "ruta_id": "ruta_88", "fecha_envio": "2022-04-05T00:00:00", "estado": "En preparación", "medio_pago": "Efectivo", "total": 12216.14}
+{"_id": "orden_44", "cliente_id": "cli_13", "ruta_id": "ruta_21", "fecha_envio": "2023-10-08T00:00:00", "estado": "Entregado", "medio_pago": "Transferencia", "total": 39163.42}
+{"_id": "orden_45", "cliente_id": "cli_36", "ruta_id": "ruta_64", "fecha_envio": "2022-05-11T00:00:00", "estado": "En preparación", "medio_pago": "Transferencia", "total": 73933.08}
+{"_id": "orden_46", "cliente_id": "cli_69", "ruta_id": "ruta_44", "fecha_envio": "2023-11-13T00:00:00", "estado": "Cancelado", "medio_pago": "Transferencia", "total": 177441.7}
+{"_id": "orden_47", "cliente_id": "cli_35", "ruta_id": "ruta_89", "fecha_envio": "2023-11-13T00:00:00", "estado": "En tránsito", "medio_pago": "Efectivo", "total": 159634.32}
+{"_id": "orden_48", "cliente_id": "cli_9", "ruta_id": "ruta_62", "fecha_envio": "2023-12-14T00:00:00", "estado": "Cancelado", "medio_pago": "Transferencia", "total": 152201.31}
+{"_id": "orden_49", "cliente_id": "cli_81", "ruta_id": "ruta_39", "fecha_envio": "2024-05-30T00:00:00", "estado": "Cancelado", "medio_pago": "Transferencia", "total": 85185.59}
+{"_id": "orden_50", "cliente_id": "cli_68", "ruta_id": "ruta_54", "fecha_envio": "2022-01-17T00:00:00", "estado": "En preparación", "medio_pago": "Transferencia", "total": 91424.91}
+{"_id": "orden_51", "cliente_id": "cli_48", "ruta_id": "ruta_69", "fecha_envio": "2024-06-07T00:00:00", "estado": "En tránsito", "medio_pago": "Transferencia", "total": 143176.15}
+{"_id": "orden_52", "cliente_id": "cli_39", "ruta_id": "ruta_29", "fecha_envio": "2023-07-14T00:00:00", "estado": "En preparación", "medio_pago": "Transferencia", "total": 165826.58}
+{"_id": "orden_53", "cliente_id": "cli_61", "ruta_id": "ruta_47", "fecha_envio": "2023-09-19T00:00:00", "estado": "Entregado", "medio_pago": "Efectivo", "total": 147296.41}
+{"_id": "orden_54", "cliente_id": "cli_27", "ruta_id": "ruta_63", "fecha_envio": "2023-02-20T00:00:00", "estado": "En tránsito", "medio_pago": "Efectivo", "total": 61551.05}
+{"_id": "orden_55", "cliente_id": "cli_98", "ruta_id": "ruta_67", "fecha_envio": "2024-06-22T00:00:00", "estado": "En tránsito", "medio_pago": "Efectivo", "total": 73814.03}
+{"_id": "orden_56", "cliente_id": "cli_87", "ruta_id": "ruta_65", "fecha_envio": "2022-08-14T00:00:00", "estado": "En preparación", "medio_pago": "Efectivo", "total": 113992.02}
+{"_id": "orden_57", "cliente_id": "cli_68", "ruta_id": "ruta_86", "fecha_envio": "2023-01-07T00:00:00", "estado": "Entregado", "medio_pago": "Transferencia", "total": 54679.23}
+{"_id": "orden_58", "cliente_id": "cli_29", "ruta_id": "ruta_19", "fecha_envio": "2023-03-27T00:00:00", "estado": "Cancelado", "medio_pago": "Tarjeta", "total": 96902.9}
+{"_id": "orden_59", "cliente_id": "cli_8", "ruta_id": "ruta_9", "fecha_envio": "2023-06-08T00:00:00", "estado": "En preparación", "medio_pago": "Tarjeta", "total": 65446.18}
+{"_id": "orden_60", "cliente_id": "cli_95", "ruta_id": "ruta_63", "fecha_envio": "2023-04-26T00:00:00", "estado": "Cancelado", "medio_pago": "Transferencia", "total": 80112.24}
+{"_id": "orden_61", "cliente_id": "cli_39", "ruta_id": "ruta_49", "fecha_envio": "2022-09-09T00:00:00", "estado": "Entregado", "medio_pago": "Efectivo", "total": 25799.36}
+{"_id": "orden_62", "cliente_id": "cli_90", "ruta_id": "ruta_27", "fecha_envio": "2024-01-09T00:00:00", "estado": "Entregado", "medio_pago": "Tarjeta", "total": 55358.79}
+{"_id": "orden_63", "cliente_id": "cli_7", "ruta_id": "ruta_56", "fecha_envio": "2023-10-11T00:00:00", "estado": "Cancelado", "medio_pago": "Efectivo", "total": 26076.37}
+{"_id": "orden_64", "cliente_id": "cli_91", "ruta_id": "ruta_91", "fecha_envio": "2022-01-23T00:00:00", "estado": "Entregado", "medio_pago": "Tarjeta", "total": 106409.91}
+{"_id": "orden_65", "cliente_id": "cli_67", "ruta_id": "ruta_46", "fecha_envio": "2023-03-20T00:00:00", "estado": "En preparación", "medio_pago": "Transferencia", "total": 104968.45}
+{"_id": "orden_66", "cliente_id": "cli_92", "ruta_id": "ruta_34", "fecha_envio": "2023-08-20T00:00:00", "estado": "Cancelado", "medio_pago": "Transferencia", "total": 107672.42}
+{"_id": "orden_67", "cliente_id": "cli_35", "ruta_id": "ruta_74", "fecha_envio": "2022-08-19T00:00:00", "estado": "En tránsito", "medio_pago": "Efectivo", "total": 15218.59}
+{"_id": "orden_68", "cliente_id": "cli_94", "ruta_id": "ruta_65", "fecha_envio": "2023-09-02T00:00:00", "estado": "En preparación", "medio_pago": "Transferencia", "total": 110591.61}
+{"_id": "orden_69", "cliente_id": "cli_8", "ruta_id": "ruta_77", "fecha_envio": "2022-03-22T00:00:00", "estado": "Cancelado", "medio_pago": "Tarjeta", "total": 136300.86}
+{"_id": "orden_70", "cliente_id": "cli_39", "ruta_id": "ruta_60", "fecha_envio": "2023-10-13T00:00:00", "estado": "Cancelado", "medio_pago": "Tarjeta", "total": 198622.39}
+{"_id": "orden_71", "cliente_id": "cli_18", "ruta_id": "ruta_33", "fecha_envio": "2024-03-20T00:00:00", "estado": "En preparación", "medio_pago": "Efectivo", "total": 109499.89}
+{"_id": "orden_72", "cliente_id": "cli_47", "ruta_id": "ruta_8", "fecha_envio": "2023-07-16T00:00:00", "estado": "Entregado", "medio_pago": "Tarjeta", "total": 40899.26}
+{"_id": "orden_73", "cliente_id": "cli_36", "ruta_id": "ruta_63", "fecha_envio": "2024-06-13T00:00:00", "estado": "En preparación", "medio_pago": "Tarjeta", "total": 43892.7}
+{"_id": "orden_74", "cliente_id": "cli_3", "ruta_id": "ruta_99", "fecha_envio": "2022-02-19T00:00:00", "estado": "Entregado", "medio_pago": "Transferencia", "total": 151939.8}
+{"_id": "orden_75", "cliente_id": "cli_21", "ruta_id": "ruta_32", "fecha_envio": "2022-04-13T00:00:00", "estado": "En preparación", "medio_pago": "Tarjeta", "total": 38707.91}
+{"_id": "orden_76", "cliente_id": "cli_50", "ruta_id": "ruta_58", "fecha_envio": "2022-02-15T00:00:00", "estado": "En tránsito", "medio_pago": "Tarjeta", "total": 72390.5}
+{"_id": "orden_77", "cliente_id": "cli_31", "ruta_id": "ruta_21", "fecha_envio": "2023-01-15T00:00:00", "estado": "En preparación", "medio_pago": "Efectivo", "total": 146329.03}
+{"_id": "orden_78", "cliente_id": "cli_79", "ruta_id": "ruta_30", "fecha_envio": "2023-04-02T00:00:00", "estado": "En tránsito", "medio_pago": "Tarjeta", "total": 102726.16}
+{"_id": "orden_79", "cliente_id": "cli_65", "ruta_id": "ruta_79", "fecha_envio": "2022-11-30T00:00:00", "estado": "En preparación", "medio_pago": "Tarjeta", "total": 76028.25}
+{"_id": "orden_80", "cliente_id": "cli_22", "ruta_id": "ruta_50", "fecha_envio": "2023-03-04T00:00:00", "estado": "Entregado", "medio_pago": "Efectivo", "total": 151690.03}
+{"_id": "orden_81", "cliente_id": "cli_89", "ruta_id": "ruta_100", "fecha_envio": "2023-04-02T00:00:00", "estado": "En tránsito", "medio_pago": "Transferencia", "total": 33970.79}
+{"_id": "orden_82", "cliente_id": "cli_39", "ruta_id": "ruta_11", "fecha_envio": "2023-05-06T00:00:00", "estado": "En tránsito", "medio_pago": "Efectivo", "total": 62151.37}
+{"_id": "orden_83", "cliente_id": "cli_4", "ruta_id": "ruta_83", "fecha_envio": "2022-08-04T00:00:00", "estado": "En preparación", "medio_pago": "Tarjeta", "total": 135716.85}
+{"_id": "orden_84", "cliente_id": "cli_79", "ruta_id": "ruta_48", "fecha_envio": "2024-01-23T00:00:00", "estado": "Entregado", "medio_pago": "Efectivo", "total": 117435.34}
+{"_id": "orden_85", "cliente_id": "cli_2", "ruta_id": "ruta_31", "fecha_envio": "2022-08-23T00:00:00", "estado": "En tránsito", "medio_pago": "Tarjeta", "total": 151058.57}
+{"_id": "orden_86", "cliente_id": "cli_4", "ruta_id": "ruta_80", "fecha_envio": "2024-06-13T00:00:00", "estado": "En preparación", "medio_pago": "Efectivo", "total": 165364.2}
+{"_id": "orden_87", "cliente_id": "cli_65", "ruta_id": "ruta_51", "fecha_envio": "2023-08-27T00:00:00", "estado": "Cancelado", "medio_pago": "Efectivo", "total": 197288.08}
+{"_id": "orden_88", "cliente_id": "cli_38", "ruta_id": "ruta_75", "fecha_envio": "2022-10-19T00:00:00", "estado": "Entregado", "medio_pago": "Efectivo", "total": 55105.86}
+{"_id": "orden_89", "cliente_id": "cli_76", "ruta_id": "ruta_51", "fecha_envio": "2023-06-03T00:00:00", "estado": "Cancelado", "medio_pago": "Efectivo", "total": 102167.59}
+{"_id": "orden_90", "cliente_id": "cli_4", "ruta_id": "ruta_87", "fecha_envio": "2023-10-28T00:00:00", "estado": "Entregado", "medio_pago": "Efectivo", "total": 179474.96}
+{"_id": "orden_91", "cliente_id": "cli_98", "ruta_id": "ruta_18", "fecha_envio": "2022-10-06T00:00:00", "estado": "En preparación", "medio_pago": "Tarjeta", "total": 72623.97}
+{"_id": "orden_92", "cliente_id": "cli_66", "ruta_id": "ruta_9", "fecha_envio": "2023-09-02T00:00:00", "estado": "En preparación", "medio_pago": "Efectivo", "total": 190572.76}
+{"_id": "orden_93", "cliente_id": "cli_34", "ruta_id": "ruta_14", "fecha_envio": "2023-02-22T00:00:00", "estado": "Cancelado", "medio_pago": "Tarjeta", "total": 185698.33}
+{"_id": "orden_94", "cliente_id": "cli_71", "ruta_id": "ruta_85", "fecha_envio": "2022-03-07T00:00:00", "estado": "En preparación", "medio_pago": "Tarjeta", "total": 13765.39}
+{"_id": "orden_95", "cliente_id": "cli_42", "ruta_id": "ruta_80", "fecha_envio": "2023-07-28T00:00:00", "estado": "Entregado", "medio_pago": "Transferencia", "total": 66970.39}
+{"_id": "orden_96", "cliente_id": "cli_49", "ruta_id": "ruta_13", "fecha_envio": "2023-07-07T00:00:00", "estado": "En tránsito", "medio_pago": "Transferencia", "total": 165947.93}
+{"_id": "orden_97", "cliente_id": "cli_40", "ruta_id": "ruta_59", "fecha_envio": "2022-12-23T00:00:00", "estado": "Entregado", "medio_pago": "Transferencia", "total": 176107.92}
+{"_id": "orden_98", "cliente_id": "cli_16", "ruta_id": "ruta_85", "fecha_envio": "2022-11-07T00:00:00", "estado": "En preparación", "medio_pago": "Transferencia", "total": 76704.25}
+{"_id": "orden_99", "cliente_id": "cli_10", "ruta_id": "ruta_43", "fecha_envio": "2022-04-24T00:00:00", "estado": "Entregado", "medio_pago": "Transferencia", "total": 41628.63}
+{"_id": "orden_100", "cliente_id": "cli_25", "ruta_id": "ruta_87", "fecha_envio": "2022-10-26T00:00:00", "estado": "En tránsito", "medio_pago": "Tarjeta", "total": 75163.6}

@@ -1,0 +1,249 @@
+
+GET /health -> 200 (609 ms) X-Request-ID=423f87a7
+{
+  "base": "QuickTrack",
+  "documentos": {
+    "clientes": 100,
+    "ordenes_entrega": 100,
+    "rutas": 100,
+    "seguimiento": 100,
+    "valoraciones": 100
+  },
+  "ping_ms": 70.7,
+  "status": "ok"
+}
+
+GET /ordenes?zona=Norte&estado=Entregado&limite=3 -> 200 (187 ms) X-Request-ID=cd4a37b2
+{
+  "datos": [
+    {
+      "_id": "orden_28",
+      "cliente_id": "cli_11",
+      "estado": "Entregado",
+      "fecha_envio": "2024-02-27T00:00:00",
+      "total": 197977.37,
+      "zona": "Norte"
+    },
+    {
+      "_id": "orden_83",
+      "cliente_id": "cli_4",
+      "estado": "Entregado",
+      "fecha_envio": "2022-08-04T00:00:00",
+      "total": 135716.85,
+      "zona": "Norte"
+    },
+    {
+      "_id": "orden_45",
+      "cliente_id": "cli_36",
+      "estado": "Entregado",
+      "fecha_envio": "2022-05-11T00:00:00",
+      "total": 73933.08,
+      "zona": "Norte"
+    }
+  ],
+  "total_coincidencias": 4
+}
+
+GET /kpis/zonas -> 200 (86 ms) X-Request-ID=24fe7817
+[
+  {
+    "ordenes": 17,
+    "pct_canceladas": 47.1,
+    "puntaje_prom": 2.71,
+    "zona": "Centro"
+  },
+  {
+    "ordenes": 22,
+    "pct_canceladas": 36.4,
+    "puntaje_prom": 3.0,
+    "zona": "Norte"
+  },
+  {
+    "ordenes": 26,
+    "pct_canceladas": 7.7,
+    "puntaje_prom": 3.35,
+    "zona": "Oriente"
+  },
+  {
+    "ordenes": 22,
+    "pct_canceladas": 9.1,
+    "puntaje_prom": 3.14,
+    "zona": "Poniente"
+  },
+  {
+    "ordenes": 13,
+    "pct_canceladas": 23.1,
+    "puntaje_prom": 3.0,
+    "zona": "Sur"
+  }
+]
+
+POST /clientes -> 201 (237 ms) X-Request-ID=4e1fa458
+{
+  "_id": "cli_102",
+  "correo": "api1792972488@quicktrack.cl",
+  "fecha_registro": "2026-10-25T20:54:48.666253",
+  "nombre": "Cliente API",
+  "pais": "Chile"
+}
+
+POST /ordenes -> 201 (461 ms) X-Request-ID=faed7540
+{
+  "_id": "orden_102",
+  "cliente_id": "cli_102",
+  "estado": "En preparación",
+  "fecha_envio": "2026-10-25T20:54:48.900438",
+  "medio_pago": "Transferencia",
+  "ruta_id": "ruta_5",
+  "total": 32500.0,
+  "zona": "Oriente"
+}
+
+GET /ordenes/orden_102 -> 200 (80 ms) X-Request-ID=2dc7b8c6
+{
+  "_id": "orden_102",
+  "cliente": {
+    "_id": "cli_102",
+    "correo": "api1792972488@quicktrack.cl",
+    "fecha_registro": "2026-10-25T20:54:48.666000",
+    "nombre": "Cliente API",
+    "pais": "Chile"
+  },
+  "cliente_id": "cli_102",
+  "estado": "En preparación",
+  "fecha_envio": "2026-10-25T20:54:48.900000",
+  "medio_pago": "Transferencia",
+  "ruta": {
+    "_id": "ruta_5",
+    "ciudad_destino": "Arica",
+    "ciudad_origen": "Valparaíso",
+    "distancia_km": 1945.84,
+    "zona": "Oriente"
+  },
+  "ruta_id": "ruta_5",
+  "seguimiento": {
+    "_id": "seg_102",
+    "estado_actual": "En preparación",
+    "historial": [
+      {
+        "estado": "En preparación",
+        "fecha": "2026-10-25T2
+...
+
+PATCH /ordenes/orden_102/estado -> 200 (307 ms) X-Request-ID=8736a02f
+{
+  "estado_anterior": "En preparación",
+  "estado_nuevo": "Despachado",
+  "fecha": "2026-10-25T20:54:49.364081",
+  "orden_id": "orden_102"
+}
+
+PATCH /ordenes/orden_102/estado -> 200 (323 ms) X-Request-ID=378ba17c
+{
+  "estado_anterior": "Despachado",
+  "estado_nuevo": "En tránsito",
+  "fecha": "2026-10-25T20:54:49.688456",
+  "orden_id": "orden_102"
+}
+
+PATCH /ordenes/orden_102/estado -> 200 (310 ms) X-Request-ID=e4a030da
+{
+  "estado_anterior": "En tránsito",
+  "estado_nuevo": "Entregado",
+  "fecha": "2026-10-25T20:54:49.998251",
+  "orden_id": "orden_102"
+}
+
+POST /valoraciones -> 201 (154 ms) X-Request-ID=78a140cf
+{
+  "_id": "val_102",
+  "comentario": "Muy buen servicio",
+  "orden_id": "orden_102",
+  "puntaje": 4,
+  "recomienda": true
+}
+
+GET /ordenes/orden_102 -> 200 (77 ms) X-Request-ID=8a893f6f
+{
+  "_id": "orden_102",
+  "cliente": {
+    "_id": "cli_102",
+    "correo": "api1792972488@quicktrack.cl",
+    "fecha_registro": "2026-10-25T20:54:48.666000",
+    "nombre": "Cliente API",
+    "pais": "Chile"
+  },
+  "cliente_id": "cli_102",
+  "estado": "Entregado",
+  "fecha_envio": "2026-10-25T20:54:48.900000",
+  "medio_pago": "Transferencia",
+  "ruta": {
+    "_id": "ruta_5",
+    "ciudad_destino": "Arica",
+    "ciudad_origen": "Valparaíso",
+    "distancia_km": 1945.84,
+    "zona": "Oriente"
+  },
+  "ruta_id": "ruta_5",
+  "seguimiento": {
+    "_id": "seg_102",
+    "estado_actual": "Entregado",
+    "historial": [
+      {
+        "estado": "En preparación",
+        "fecha": "2026-10-25T20:54:48.90
+...
+
+######## Casos de error controlados ########
+
+POST /ordenes -> 400 (5 ms) X-Request-ID=810ff143
+{
+  "error": "'total' debe ser un número mayor a 0",
+  "request_id": "810ff143",
+  "status": 400
+}
+
+POST /ordenes -> 404 (78 ms) X-Request-ID=d3b369c1
+{
+  "error": "El cliente cli_00000 no existe",
+  "request_id": "d3b369c1",
+  "status": 404
+}
+
+PATCH /ordenes/orden_102/estado -> 409 (79 ms) X-Request-ID=f1067943
+{
+  "error": "Transición no permitida: 'Entregado' -> 'En preparación'. Permitidas: []",
+  "request_id": "f1067943",
+  "status": 409
+}
+
+GET /ordenes?zona=Marte -> 400 (5 ms) X-Request-ID=29b952b1
+{
+  "error": "'zona' debe ser una de ['Norte', 'Centro', 'Sur', 'Oriente', 'Poniente']",
+  "request_id": "29b952b1",
+  "status": 400
+}
+
+GET /ordenes/orden_inexistente -> 404 (75 ms) X-Request-ID=be7b821e
+{
+  "error": "La orden orden_inexistente no existe",
+  "request_id": "be7b821e",
+  "status": 404
+}
+
+DELETE /ordenes/orden_102 -> 200 (388 ms) X-Request-ID=03075243
+{
+  "eliminados": {
+    "ordenes_entrega": 1,
+    "seguimiento": 1,
+    "valoraciones": 1
+  },
+  "orden_id": "orden_102"
+}
+
+GET /ordenes/orden_102 -> 404 (79 ms) X-Request-ID=fd3a714f
+{
+  "error": "La orden orden_102 no existe",
+  "request_id": "fd3a714f",
+  "status": 404
+}

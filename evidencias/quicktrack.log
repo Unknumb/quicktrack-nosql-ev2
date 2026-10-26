@@ -1,0 +1,63 @@
+2026-10-25 20:52:34,180 | INFO    | db | Conexión OK | servidor MongoDB 8.0.34 | ping 871.7 ms | base 'QuickTrack'
+2026-10-25 20:52:34,614 | INFO    | setup | Colección 'clientes' creada con $jsonSchema e índices ['_id_', 'ux_correo']
+2026-10-25 20:52:35,045 | INFO    | setup | Colección 'rutas' creada con $jsonSchema e índices ['_id_', 'ix_zona_distancia']
+2026-10-25 20:52:35,668 | INFO    | setup | Colección 'ordenes_entrega' creada con $jsonSchema e índices ['_id_', 'ix_zona_estado_total', 'ix_cliente', 'ix_fecha_envio']
+2026-10-25 20:52:36,099 | INFO    | setup | Colección 'seguimiento' creada con $jsonSchema e índices ['_id_', 'ux_orden']
+2026-10-25 20:52:36,629 | INFO    | setup | Colección 'valoraciones' creada con $jsonSchema e índices ['_id_', 'ux_orden', 'ix_puntaje']
+2026-10-25 20:52:37,765 | INFO    | setup | Insertados 100 documentos en 'clientes'
+2026-10-25 20:52:38,729 | INFO    | setup | Insertados 100 documentos en 'rutas'
+2026-10-25 20:52:39,725 | INFO    | setup | Insertados 100 documentos en 'ordenes_entrega'
+2026-10-25 20:52:40,724 | INFO    | setup | Insertados 100 documentos en 'seguimiento'
+2026-10-25 20:52:41,723 | INFO    | setup | Insertados 100 documentos en 'valoraciones'
+2026-10-25 20:52:44,201 | INFO    | db | Conexión OK | servidor MongoDB 8.0.34 | ping 821.6 ms | base 'QuickTrack'
+2026-10-25 20:52:44,283 | INFO    | consultas | C1_entregas_norte_alto_valor -> 3 docs en 76.3 ms
+2026-10-25 20:52:44,367 | INFO    | consultas | C2_pendientes_efectivo_2024 -> 4 docs en 79.1 ms
+2026-10-25 20:52:44,447 | INFO    | consultas | C3_valoraciones_criticas -> 49 docs en 76.4 ms
+2026-10-25 20:52:44,529 | INFO    | consultas | C4_rutas_largas_por_zona -> 5 docs en 75.8 ms
+2026-10-25 20:52:44,617 | INFO    | consultas | C5_zonas_criticas -> 5 docs en 83.5 ms
+2026-10-25 20:52:44,701 | INFO    | consultas | C6_satisfaccion_medio_pago -> 3 docs en 80.1 ms
+2026-10-25 20:52:44,782 | INFO    | consultas | C7_tiempo_entrega_por_zona -> 5 docs en 76.4 ms
+2026-10-25 20:52:44,865 | INFO    | consultas | C8_top_clientes -> 5 docs en 78.3 ms
+2026-10-25 20:52:46,487 | INFO    | db | Conexión OK | servidor MongoDB 8.0.34 | ping 783.0 ms | base 'QuickTrack'
+2026-10-25 20:52:47,133 | INFO    | servicio | Cliente creado cli_101
+2026-10-25 20:52:47,589 | INFO    | servicio | Orden creada orden_101 (cliente cli_101, ruta ruta_10)
+2026-10-25 20:52:48,048 | INFO    | servicio | Orden orden_101: En preparación -> Despachado
+2026-10-25 20:52:48,391 | INFO    | servicio | Orden orden_101: Despachado -> En tránsito
+2026-10-25 20:52:48,698 | INFO    | servicio | Orden orden_101: En tránsito -> Entregado
+2026-10-25 20:52:48,929 | INFO    | servicio | Valoración creada para orden_101 (puntaje 5)
+2026-10-25 20:52:57,170 | INFO    | servicio | Orden orden_101 eliminada en cascada: {'ordenes_entrega': 1, 'seguimiento': 1, 'valoraciones': 1}
+2026-10-25 20:52:59,246 | INFO    | db | Conexión OK | servidor MongoDB 8.0.34 | ping 872.5 ms | base 'QuickTrack'
+2026-10-25 20:53:27,338 | INFO    | rendimiento | Colección ordenes_bench eliminada
+2026-10-25 20:53:29,038 | INFO    | db | Conexión OK | servidor MongoDB 8.0.34 | ping 836.6 ms | base 'QuickTrack'
+2026-10-25 20:54:44,731 | INFO    | db | Conexión OK | servidor MongoDB 8.0.34 | ping 933.7 ms | base 'QuickTrack'
+2026-10-25 20:54:48,232 | INFO    | api | [423f87a7] GET /health -> 200 (601.0 ms)
+2026-10-25 20:54:48,420 | INFO    | api | [cd4a37b2] GET /ordenes?zona=Norte&estado=Entregado&limite=3 -> 200 (181.5 ms)
+2026-10-25 20:54:48,507 | INFO    | api | [24fe7817] GET /kpis/zonas -> 200 (80.8 ms)
+2026-10-25 20:54:48,743 | INFO    | servicio | Cliente creado cli_102
+2026-10-25 20:54:48,743 | INFO    | api | [4e1fa458] POST /clientes -> 201 (231.0 ms)
+2026-10-25 20:54:49,204 | INFO    | servicio | Orden creada orden_102 (cliente cli_102, ruta ruta_5)
+2026-10-25 20:54:49,204 | INFO    | api | [faed7540] POST /ordenes -> 201 (454.7 ms)
+2026-10-25 20:54:49,285 | INFO    | api | [2dc7b8c6] GET /ordenes/orden_102 -> 200 (74.1 ms)
+2026-10-25 20:54:49,592 | INFO    | servicio | Orden orden_102: En preparación -> Despachado
+2026-10-25 20:54:49,592 | INFO    | api | [8736a02f] PATCH /ordenes/orden_102/estado -> 200 (301.9 ms)
+2026-10-25 20:54:49,916 | INFO    | servicio | Orden orden_102: Despachado -> En tránsito
+2026-10-25 20:54:49,916 | INFO    | api | [378ba17c] PATCH /ordenes/orden_102/estado -> 200 (317.9 ms)
+2026-10-25 20:54:50,225 | INFO    | servicio | Orden orden_102: En tránsito -> Entregado
+2026-10-25 20:54:50,226 | INFO    | api | [e4a030da] PATCH /ordenes/orden_102/estado -> 200 (304.2 ms)
+2026-10-25 20:54:50,380 | INFO    | servicio | Valoración creada para orden_102 (puntaje 4)
+2026-10-25 20:54:50,381 | INFO    | api | [78a140cf] POST /valoraciones -> 201 (149.3 ms)
+2026-10-25 20:54:50,458 | INFO    | api | [8a893f6f] GET /ordenes/orden_102 -> 200 (72.2 ms)
+2026-10-25 20:54:50,464 | WARNING | api | [810ff143] ErrorValidacion: 'total' debe ser un número mayor a 0
+2026-10-25 20:54:50,464 | INFO    | api | [810ff143] POST /ordenes -> 400 (0.4 ms)
+2026-10-25 20:54:50,541 | WARNING | api | [d3b369c1] NoEncontrado: El cliente cli_00000 no existe
+2026-10-25 20:54:50,542 | INFO    | api | [d3b369c1] POST /ordenes -> 404 (74.1 ms)
+2026-10-25 20:54:50,621 | WARNING | api | [f1067943] Conflicto: Transición no permitida: 'Entregado' -> 'En preparación'. Permitidas: []
+2026-10-25 20:54:50,621 | INFO    | api | [f1067943] PATCH /ordenes/orden_102/estado -> 409 (74.2 ms)
+2026-10-25 20:54:50,627 | WARNING | api | [29b952b1] ErrorValidacion: 'zona' debe ser una de ['Norte', 'Centro', 'Sur', 'Oriente', 'Poniente']
+2026-10-25 20:54:50,627 | INFO    | api | [29b952b1] GET /ordenes?zona=Marte -> 400 (0.3 ms)
+2026-10-25 20:54:50,701 | WARNING | api | [be7b821e] NoEncontrado: La orden orden_inexistente no existe
+2026-10-25 20:54:50,702 | INFO    | api | [be7b821e] GET /ordenes/orden_inexistente -> 404 (71.5 ms)
+2026-10-25 20:54:51,089 | INFO    | servicio | Orden orden_102 eliminada en cascada: {'ordenes_entrega': 1, 'seguimiento': 1, 'valoraciones': 1}
+2026-10-25 20:54:51,089 | INFO    | api | [03075243] DELETE /ordenes/orden_102 -> 200 (382.7 ms)
+2026-10-25 20:54:51,168 | WARNING | api | [fd3a714f] NoEncontrado: La orden orden_102 no existe
+2026-10-25 20:54:51,168 | INFO    | api | [fd3a714f] GET /ordenes/orden_102 -> 404 (73.6 ms)
