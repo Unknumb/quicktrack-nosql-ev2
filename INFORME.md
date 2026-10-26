@@ -297,7 +297,36 @@ Extracto de `logs/quicktrack.log`:
 
 ---
 
-## 8. Conclusiones
+## 8. Visualización en Power BI
+
+**Flujo:** MongoDB Atlas → `06_exportar_powerbi.py` → `powerbi/quicktrack_powerbi.xlsx` → Power BI
+
+1. El script usa `pymongo` y ejecuta una agregación que une las 5 colecciones con `$lookup`. El resultado es una **tabla de hechos** con una fila por orden: cliente, ruta, zona, estado, medio de pago, total, puntaje, recomendación, retraso y días de entrega.
+2. Con `pandas` calcula tablas resumen (`kpi_zona`, `medio_pago`, `comentarios`) y exporta todo a Excel.
+3. Excluye los registros de prueba creados por la API y Postman, para que no alteren los indicadores.
+4. En Power BI se importa el Excel y se arma un dashboard con filtros por zona, medio de pago y año.
+
+**Indicadores del dashboard**
+
+| Visual | Indicador | Lectura |
+|---|---|---|
+| Tarjetas | Total de órdenes, ventas, % cancelación, puntaje promedio, % que recomienda | Resumen general de la operación |
+| Barras | % de cancelación por zona | **Centro (47,1 %)** y **Norte (36,4 %)** son las zonas críticas |
+| Barras | Puntaje promedio por zona | Centro tiene la peor satisfacción (2,71); Oriente, la mejor (3,35) |
+| Columnas | % que recomienda por medio de pago | Transferencia 50 %, Tarjeta 47,1 %, Efectivo 38,2 % |
+| Anillo | Órdenes por estado | Distribución del estado operativo |
+| Líneas | Ventas por mes | Evolución temporal de los envíos |
+
+> [CAPTURA POWER BI: dashboard completo]
+
+**Recomendaciones para la gerencia**
+- **Centro:** revisar las causas de cancelación. Es la zona con más cancelaciones y peor puntaje, y sus rutas son las más largas (1.552 km en promedio).
+- **Oriente:** tiene el mayor % de comentarios de retraso (19,2 %), aunque su satisfacción general es alta. Conviene revisar los tiempos de despacho.
+- **Efectivo:** es el medio de pago con menor recomendación. Se podría incentivar el pago digital.
+
+---
+
+## 9. Conclusiones
 
 - El modelo documental se ajusta bien al caso: cada orden y su historial de seguimiento quedan como documentos autocontenidos, y las agregaciones permiten calcular los KPI directamente en la base.
 - Al revisar los datos del anexo se encontraron problemas reales de calidad: identificadores incompatibles, fechas como texto, 72 seguimientos inconsistentes con su historial y 81 órdenes con un estado distinto al de su seguimiento. Todos se detectaron y corrigieron con scripts reproducibles.

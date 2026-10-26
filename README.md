@@ -17,6 +17,7 @@ evaluación de rendimiento e integración con una API REST (Flask).
 | `04_rendimiento.py` | `explain()` con y sin índice, bytes con y sin proyección, prueba de volumen con 20.000 docs | IE6 |
 | `servicio.py` | Reglas de negocio y validaciones (compartidas por el script CRUD y la API) | IE8, IE10 |
 | `app.py` | API REST Flask + PyMongo con `X-Request-ID`, logs y manejo de errores 400/404/409/500/503 | IE9, IE10, IE11 |
+| `06_exportar_powerbi.py` | Une las colecciones con `$lookup` y exporta `powerbi/quicktrack_powerbi.xlsx` para Power BI | Caso / IE10 |
 | `05_prueba_api.py` | Prueba end-to-end de la API (escritura y lectura inmediata) | IE9 |
 | `postman/QuickTrack.postman_collection.json` | Colección Postman con tests automáticos | IE3, IE9 |
 | `data/` | Datos del anexo Forma B | |
@@ -33,6 +34,7 @@ python 01_setup_y_carga.py  # crea colecciones e inserta datos
 python 02_consultas.py      # consultas de negocio
 python 03_crud.py           # CRUD + validaciones
 python 04_rendimiento.py    # eficiencia de consultas
+python 06_exportar_powerbi.py  # Excel para Power BI
 
 python app.py               # API en http://localhost:5050 (dejar corriendo)
 python 05_prueba_api.py     # en otra terminal

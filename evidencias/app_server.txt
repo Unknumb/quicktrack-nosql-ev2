@@ -131,3 +131,19 @@
 2026-10-25 21:19:34,665 | WARNING | api | [3b667578] ErrorValidacion: 'puntaje' debe ser un entero entre 1 y 5
 2026-10-25 21:19:34,665 | INFO    | api | [3b667578] POST /valoraciones -> 400 (0.5 ms)
 127.0.0.1 - - [25/Oct/2026 21:19:34] "[31m[1mPOST /valoraciones HTTP/1.1[0m" 400 -
+2026-10-26 14:04:45,395 | INFO    | api | [e0e24861] GET /health -> 200 (961.9 ms)
+127.0.0.1 - - [26/Oct/2026 14:04:45] "GET /health HTTP/1.1" 200 -
+2026-10-26 14:04:59,899 | INFO    | servicio | Cliente creado cli_105
+2026-10-26 14:04:59,899 | INFO    | api | [6fb135fc] POST /clientes -> 201 (253.7 ms)
+127.0.0.1 - - [26/Oct/2026 14:04:59] "[35m[1mPOST /clientes HTTP/1.1[0m" 201 -
+2026-10-26 14:05:17,376 | INFO    | servicio | Orden creada orden_105 (cliente cli_105, ruta ruta_12)
+2026-10-26 14:05:17,376 | INFO    | api | [c0062363] POST /ordenes -> 201 (511.3 ms)
+127.0.0.1 - - [26/Oct/2026 14:05:17] "[35m[1mPOST /ordenes HTTP/1.1[0m" 201 -
+2026-10-26 14:05:23,353 | INFO    | api | [4625811a] GET /ordenes/orden_105 -> 200 (84.6 ms)
+127.0.0.1 - - [26/Oct/2026 14:05:23] "GET /ordenes/orden_105 HTTP/1.1" 200 -
+2026-10-26 14:05:41,082 | WARNING | api | [02a63ac0] Conflicto: Transición no permitida: 'En tránsito' -> 'En preparación'. Permitidas: ['Entregado']
+2026-10-26 14:05:41,083 | INFO    | api | [02a63ac0] PATCH /ordenes/orden_3/estado -> 409 (89.4 ms)
+127.0.0.1 - - [26/Oct/2026 14:05:41] "[31m[1mPATCH /ordenes/orden_3/estado HTTP/1.1[0m" 409 -
+2026-10-26 14:05:59,419 | WARNING | api | [ef49bcea] ErrorValidacion: 'zona' debe ser una de ['Norte', 'Centro', 'Sur', 'Oriente', 'Poniente']
+2026-10-26 14:05:59,419 | INFO    | api | [ef49bcea] GET /ordenes?zona=Marte -> 400 (0.3 ms)
+127.0.0.1 - - [26/Oct/2026 14:05:59] "[31m[1mGET /ordenes?zona=Marte HTTP/1.1[0m" 400 -
