@@ -1,0 +1,9 @@
+ordenes: 100 filas, 0 duplicados por 'id' (eliminados)
+rutas: 100 filas, 0 duplicados por 'id' (eliminados)
+rutas: 24 pares origen-destino únicos en 100 rutas; 23 pares aparecen en más de una zona y 23 con diferencias de distancia > 200 km (p.ej. misma ciudad origen-destino con 114 y 1.946 km) -> distancia_km con baja Confidence; no se usa la etiqueta origen->destino como dimensión
+ordenes: 0 nulos en id/ruta_id/estado/total
+historial: brecha entre eventos consecutivos -> valores [2.0] días (202 pares). Con brecha constante, dias_ciclo no discrimina: se documenta y no se usa como KPI.
+integridad: 0 órdenes sin ruta válida
+integridad: 0 órdenes sin seguimiento
+consistencia: 8 órdenes 'Cancelado' cuyo historial llega a 'Entregado' (historial no confiable -> se usa solo el estado de la orden como fuente de cancelación)
+consistencia: estado de la orden = último evento del historial solo en 19/100 órdenes

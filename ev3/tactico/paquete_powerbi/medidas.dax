@@ -1,0 +1,29 @@
+// QuickTrack · Pregunta táctica · 8 medidas DAX
+// Cómo usarlo: Power BI Desktop -> Vista de consultas DAX -> pegar TODO este archivo -> Ejecutar
+// -> botón "Actualizar modelo con cambios" para guardar las 8 medidas en el modelo.
+// Resultado esperado de la fila final: 0,23 | 2672017,35 | 3 | 0,84
+//
+// IMPORTANTE: la tabla se llama tactico_ordenes (nombre del CSV). Si queda con otro nombre, renómbrala.
+// Los montos del CSV vienen en CENTAVOS (enteros): por eso Ingreso Perdido divide por 100.
+
+DEFINE
+    MEASURE tactico_ordenes[Ordenes] = COUNTROWS ( tactico_ordenes )
+    MEASURE tactico_ordenes[Canceladas] = SUM ( tactico_ordenes[cancelada] )
+    MEASURE tactico_ordenes[Pct Cancelacion] = DIVIDE ( [Canceladas], [Ordenes] )
+    MEASURE tactico_ordenes[Ingreso Perdido] = SUM ( tactico_ordenes[ingreso_perdido_centavos] ) / 100
+    MEASURE tactico_ordenes[Pct Cancelacion Global] = CALCULATE ( [Pct Cancelacion], ALL ( tactico_ordenes ) )
+    MEASURE tactico_ordenes[Zona Critica] = IF ( [Pct Cancelacion] > [Pct Cancelacion Global], 1, 0 )
+    MEASURE tactico_ordenes[Zonas Criticas] = SUMX ( VALUES ( tactico_ordenes[zona] ), [Zona Critica] )
+    MEASURE tactico_ordenes[Pct Ingreso Perdido Zonas Criticas] =
+        DIVIDE (
+            CALCULATE ( [Ingreso Perdido], FILTER ( VALUES ( tactico_ordenes[zona] ), [Zona Critica] = 1 ) ),
+            CALCULATE ( [Ingreso Perdido], ALL ( tactico_ordenes ) )
+        )
+
+EVALUATE
+ROW (
+    "Pct Cancelacion", [Pct Cancelacion],
+    "Ingreso Perdido", [Ingreso Perdido],
+    "Zonas Criticas", [Zonas Criticas],
+    "Pct Ingreso Zonas Criticas", [Pct Ingreso Perdido Zonas Criticas]
+)

@@ -1,0 +1,58 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+body{margin:0;background:#fff;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+</style></head><body>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="560" viewBox="0 0 1600 560">
+  <defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M1,1 L11,6 L1,11 Z" fill="#52514e"/></marker></defs>
+  <rect width="1600" height="560" fill="#ffffff"/>
+  <!-- bandas ETL -->
+  <g font-size="22" font-weight="700" fill="#1f3864">
+    <rect x="40" y="30" width="660" height="40" rx="8" fill="#e8eef8"/><text x="370" y="58" text-anchor="middle">EXTRACT</text>
+    <rect x="720" y="30" width="420" height="40" rx="8" fill="#e8eef8"/><text x="930" y="58" text-anchor="middle">TRANSFORM</text>
+    <rect x="1160" y="30" width="400" height="40" rx="8" fill="#e8eef8"/><text x="1360" y="58" text-anchor="middle">LOAD / VISUALIZACIÓN</text>
+  </g>
+  <!-- cajas -->
+  <g font-size="21" fill="#0b0b0b" stroke="#2a78d6" stroke-width="3">
+    <rect x="40" y="110" width="300" height="230" rx="14" fill="#fcfcfb"/>
+    <rect x="400" y="110" width="300" height="230" rx="14" fill="#fcfcfb"/>
+    <rect x="760" y="110" width="340" height="230" rx="14" fill="#fcfcfb"/>
+    <rect x="1160" y="110" width="400" height="230" rx="14" fill="#fcfcfb"/>
+  </g>
+  <g font-size="24" font-weight="700" fill="#0b0b0b" text-anchor="middle">
+    <text x="190" y="152">Azure Cosmos DB</text><text x="550" y="152">Azure Data Factory</text>
+    <text x="930" y="152">Python (pandas)</text><text x="1360" y="152">Power BI (navegador)</text>
+  </g>
+  <g font-size="18" fill="#52514e" text-anchor="middle">
+    <text x="190" y="182">for NoSQL · modo Serverless</text><text x="190" y="208">base: quicktrack</text><text x="190" y="234">5 contenedores × 100 docs</text><text x="190" y="266">ordenes_entrega · rutas</text><text x="190" y="292">seguimiento · clientes</text><text x="190" y="318">valoraciones</text>
+
+    <text x="550" y="184">PL_ETL_QuickTrack_Tactico</text><text x="550" y="214">3 actividades Copy data</text><text x="550" y="244">consultas SQL en el origen:</text><text x="550" y="274">proyección + JOIN … IN</text><text x="550" y="304">(aplana el arreglo historial)</text>
+
+    <text x="930" y="184">transformar_tactico.py</text><text x="930" y="214">limpieza · tipos · centavos</text><text x="930" y="244">une ordenes con rutas</text><text x="930" y="274">campos derivados:</text><text x="930" y="304">cancelada · ingreso_perdido · tramo</text>
+
+    <text x="1360" y="184">carga de archivo CSV</text><text x="1360" y="214">modelo semántico + 8 medidas DAX</text><text x="1360" y="244">dashboard: 4 KPI · 4 gráficos</text><text x="1360" y="274">filtros por zona y tramo</text><text x="1360" y="304">cuenta institucional Duoc UC</text>
+  </g>
+  <!-- flechas -->
+  <g stroke="#52514e" stroke-width="3.5" fill="none" marker-end="url(#a)">
+    <line x1="340" y1="225" x2="396" y2="225"/><line x1="700" y1="225" x2="756" y2="225"/><line x1="1100" y1="225" x2="1156" y2="225"/>
+  </g>
+  <!-- blob intermedio -->
+  <rect x="400" y="380" width="620" height="100" rx="14" fill="#f4f4f1" stroke="#898781" stroke-width="2"/>
+  <text x="710" y="412" text-anchor="middle" font-size="22" font-weight="700" fill="#0b0b0b">Azure Blob Storage · salida-etl</text>
+  <text x="710" y="442" text-anchor="middle" font-size="17" fill="#52514e">ordenes_planas.json · rutas.json</text>
+  <text x="710" y="464" text-anchor="middle" font-size="17" fill="#52514e">seguimiento_eventos.json (archivo intermedio)</text>
+  <g stroke="#52514e" stroke-width="3" fill="none" marker-end="url(#a)">
+    <path d="M550,340 L550,376"/><path d="M930,380 L930,344"/><path d="M1060,340 L1060,420 L1156,420"/>
+  </g>
+  <!-- carga inicial -->
+  <rect x="40" y="380" width="300" height="80" rx="14" fill="#fff" stroke="#2a78d6" stroke-width="2" stroke-dasharray="0"/>
+  <text x="190" y="414" text-anchor="middle" font-size="20" font-weight="700" fill="#0b0b0b">cargar_cosmos.py</text>
+  <text x="190" y="442" text-anchor="middle" font-size="17" fill="#52514e">JSON del anexo → Cosmos DB</text>
+  <path d="M190,380 L190,344" stroke="#52514e" stroke-width="3" fill="none" marker-end="url(#a)"/>
+  <!-- CSV -->
+  <rect x="1160" y="380" width="400" height="80" rx="14" fill="#f4f4f1" stroke="#898781" stroke-width="2"/>
+  <text x="1360" y="414" text-anchor="middle" font-size="20" font-weight="700" fill="#0b0b0b">tactico_ordenes.csv</text>
+  <text x="1360" y="442" text-anchor="middle" font-size="17" fill="#52514e">montos en centavos · 100 filas</text>
+  <path d="M1100,420 L1360,420" stroke="none"/>
+  <path d="M930,344 L930,344" stroke="none"/>
+  <path d="M1360,380 L1360,344" stroke="#52514e" stroke-width="3" fill="none" marker-end="url(#a)"/>
+  <text x="800" y="528" text-anchor="middle" font-size="18" fill="#52514e">Transformación en dos lugares: aplanamiento y proyección dentro de Cosmos DB (consulta SQL de ADF) · limpieza y campos derivados en Python.</text>
+</svg></body></html>

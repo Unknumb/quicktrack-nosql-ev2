@@ -2,6 +2,8 @@
 
 **Integrantes:** Alvaro Uribe, Nicolas Mansilla y Genesis Montero
 
+> **EV3 · Explotación de datos NoSQL para el análisis organizacional:** el desarrollo de la evaluación 3 (Cosmos DB, Azure Data Factory, Python y Power BI) está en la carpeta [`ev3/`](ev3/README.md).
+
 Implementación de una base de datos NoSQL (MongoDB Atlas) para la empresa de logística QuickTrack:
 creación de colecciones con validación, carga de datos, consultas de negocio, CRUD completo,
 evaluación de rendimiento e integración con una API REST (Flask).
