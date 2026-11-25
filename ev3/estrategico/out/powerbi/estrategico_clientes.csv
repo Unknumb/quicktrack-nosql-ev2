@@ -1,0 +1,101 @@
+﻿orden_id,cliente_id,tipo_cliente,zona,anio,estado,cancelada,total_centavos,ingreso_efectivo_centavos,ingreso_perdido_centavos
+orden_1,cli_99,Empresa,Centro,2022,Cancelado,1,13415277,0,13415277
+orden_2,cli_73,Persona,Poniente,2024,Entregado,0,16550920,16550920,0
+orden_3,cli_31,Persona,Centro,2022,Entregado,0,11184149,11184149,0
+orden_4,cli_56,Persona,Norte,2022,En preparación,0,15119120,15119120,0
+orden_5,cli_86,Persona,Poniente,2023,En tránsito,0,17078529,17078529,0
+orden_6,cli_16,Persona,Centro,2023,Entregado,0,14205952,14205952,0
+orden_7,cli_72,Empresa,Norte,2022,Entregado,0,5583256,5583256,0
+orden_8,cli_68,Persona,Norte,2023,Cancelado,1,8873489,0,8873489
+orden_9,cli_22,Persona,Poniente,2023,En preparación,0,12174979,12174979,0
+orden_10,cli_1,Persona,Norte,2023,En preparación,0,19711652,19711652,0
+orden_11,cli_75,Empresa,Oriente,2024,Entregado,0,7599581,7599581,0
+orden_12,cli_13,Persona,Centro,2023,Entregado,0,10807734,10807734,0
+orden_13,cli_77,Persona,Poniente,2024,En preparación,0,10676304,10676304,0
+orden_14,cli_71,Persona,Poniente,2022,Entregado,0,16869970,16869970,0
+orden_15,cli_50,Empresa,Norte,2024,Cancelado,1,8308424,0,8308424
+orden_16,cli_59,Persona,Oriente,2022,En tránsito,0,2257755,2257755,0
+orden_17,cli_35,Empresa,Oriente,2023,En tránsito,0,13521193,13521193,0
+orden_18,cli_29,Persona,Centro,2024,Cancelado,1,17150106,0,17150106
+orden_19,cli_63,Empresa,Centro,2023,Cancelado,1,14091468,0,14091468
+orden_20,cli_96,Empresa,Norte,2022,Cancelado,1,4605764,0,4605764
+orden_21,cli_36,Empresa,Sur,2023,En preparación,0,16963046,16963046,0
+orden_22,cli_71,Persona,Poniente,2024,En tránsito,0,19032801,19032801,0
+orden_23,cli_20,Empresa,Centro,2022,Cancelado,1,17230502,0,17230502
+orden_24,cli_68,Persona,Oriente,2022,En tránsito,0,10112788,10112788,0
+orden_25,cli_90,Empresa,Poniente,2023,Cancelado,1,15172326,0,15172326
+orden_26,cli_27,Empresa,Poniente,2022,Entregado,0,18207553,18207553,0
+orden_27,cli_19,Persona,Norte,2023,Cancelado,1,7071350,0,7071350
+orden_28,cli_11,Persona,Norte,2024,Entregado,0,19797737,19797737,0
+orden_29,cli_91,Persona,Norte,2023,En tránsito,0,13155060,13155060,0
+orden_30,cli_3,Empresa,Norte,2023,En preparación,0,17498373,17498373,0
+orden_31,cli_58,Persona,Poniente,2023,En preparación,0,18858354,18858354,0
+orden_32,cli_88,Persona,Centro,2022,En preparación,0,1859478,1859478,0
+orden_33,cli_74,Persona,Centro,2022,En tránsito,0,6011539,6011539,0
+orden_34,cli_59,Persona,Norte,2024,Cancelado,1,4868963,0,4868963
+orden_35,cli_55,Empresa,Poniente,2022,En tránsito,0,19010646,19010646,0
+orden_36,cli_88,Persona,Sur,2022,En tránsito,0,17094769,17094769,0
+orden_37,cli_43,Persona,Oriente,2022,Cancelado,1,1847088,0,1847088
+orden_38,cli_58,Persona,Poniente,2023,Entregado,0,15256169,15256169,0
+orden_39,cli_1,Persona,Norte,2022,En preparación,0,8286702,8286702,0
+orden_40,cli_48,Empresa,Sur,2023,Entregado,0,4460071,4460071,0
+orden_41,cli_79,Persona,Sur,2024,En preparación,0,6212682,6212682,0
+orden_42,cli_59,Persona,Oriente,2022,Entregado,0,8164021,8164021,0
+orden_43,cli_69,Empresa,Oriente,2022,En preparación,0,1221614,1221614,0
+orden_44,cli_13,Persona,Poniente,2023,Entregado,0,3916342,3916342,0
+orden_45,cli_36,Empresa,Norte,2022,En preparación,0,7393308,7393308,0
+orden_46,cli_69,Empresa,Norte,2023,Cancelado,1,17744170,0,17744170
+orden_47,cli_35,Empresa,Oriente,2023,En tránsito,0,15963432,15963432,0
+orden_48,cli_9,Empresa,Sur,2023,Cancelado,1,15220131,0,15220131
+orden_49,cli_81,Empresa,Centro,2024,Cancelado,1,8518559,0,8518559
+orden_50,cli_68,Persona,Centro,2022,En preparación,0,9142491,9142491,0
+orden_51,cli_48,Empresa,Oriente,2024,En tránsito,0,14317615,14317615,0
+orden_52,cli_39,Empresa,Norte,2023,En preparación,0,16582658,16582658,0
+orden_53,cli_61,Persona,Oriente,2023,Entregado,0,14729641,14729641,0
+orden_54,cli_27,Empresa,Poniente,2023,En tránsito,0,6155105,6155105,0
+orden_55,cli_98,Persona,Oriente,2024,En tránsito,0,7381403,7381403,0
+orden_56,cli_87,Empresa,Sur,2022,En preparación,0,11399202,11399202,0
+orden_57,cli_68,Persona,Poniente,2023,Entregado,0,5467923,5467923,0
+orden_58,cli_29,Persona,Norte,2023,Cancelado,1,9690290,0,9690290
+orden_59,cli_8,Persona,Oriente,2023,En preparación,0,6544618,6544618,0
+orden_60,cli_95,Empresa,Poniente,2023,Cancelado,1,8011224,0,8011224
+orden_61,cli_39,Empresa,Oriente,2022,Entregado,0,2579936,2579936,0
+orden_62,cli_90,Empresa,Poniente,2024,Entregado,0,5535879,5535879,0
+orden_63,cli_7,Persona,Sur,2023,Cancelado,1,2607637,0,2607637
+orden_64,cli_91,Persona,Norte,2022,Entregado,0,10640991,10640991,0
+orden_65,cli_67,Persona,Poniente,2023,En preparación,0,10496845,10496845,0
+orden_66,cli_92,Persona,Centro,2023,Cancelado,1,10767242,0,10767242
+orden_67,cli_35,Empresa,Centro,2022,En tránsito,0,1521859,1521859,0
+orden_68,cli_94,Persona,Sur,2023,En preparación,0,11059161,11059161,0
+orden_69,cli_8,Persona,Sur,2022,Cancelado,1,13630086,0,13630086
+orden_70,cli_39,Empresa,Norte,2023,Cancelado,1,19862239,0,19862239
+orden_71,cli_18,Empresa,Oriente,2024,En preparación,0,10949989,10949989,0
+orden_72,cli_47,Persona,Centro,2023,Entregado,0,4089926,4089926,0
+orden_73,cli_36,Empresa,Poniente,2024,En preparación,0,4389270,4389270,0
+orden_74,cli_3,Empresa,Poniente,2022,Entregado,0,15193980,15193980,0
+orden_75,cli_21,Empresa,Oriente,2022,En preparación,0,3870791,3870791,0
+orden_76,cli_50,Empresa,Norte,2022,En tránsito,0,7239050,7239050,0
+orden_77,cli_31,Persona,Poniente,2023,En preparación,0,14632903,14632903,0
+orden_78,cli_79,Persona,Oriente,2023,En tránsito,0,10272616,10272616,0
+orden_79,cli_65,Empresa,Oriente,2022,En preparación,0,7602825,7602825,0
+orden_80,cli_22,Persona,Poniente,2023,Entregado,0,15169003,15169003,0
+orden_81,cli_89,Persona,Sur,2023,En tránsito,0,3397079,3397079,0
+orden_82,cli_39,Empresa,Oriente,2023,En tránsito,0,6215137,6215137,0
+orden_83,cli_4,Persona,Norte,2022,En preparación,0,13571685,13571685,0
+orden_84,cli_79,Persona,Sur,2024,Entregado,0,11743534,11743534,0
+orden_85,cli_2,Persona,Oriente,2022,En tránsito,0,15105857,15105857,0
+orden_86,cli_4,Persona,Oriente,2024,En preparación,0,16536420,16536420,0
+orden_87,cli_65,Empresa,Centro,2023,Cancelado,1,19728808,0,19728808
+orden_88,cli_38,Persona,Oriente,2022,Entregado,0,5510586,5510586,0
+orden_89,cli_76,Persona,Centro,2023,Cancelado,1,10216759,0,10216759
+orden_90,cli_4,Persona,Oriente,2023,Entregado,0,17947496,17947496,0
+orden_91,cli_98,Persona,Poniente,2022,En preparación,0,7262397,7262397,0
+orden_92,cli_66,Empresa,Oriente,2023,En preparación,0,19057276,19057276,0
+orden_93,cli_34,Persona,Oriente,2023,Cancelado,1,18569833,0,18569833
+orden_94,cli_71,Persona,Sur,2022,En preparación,0,1376539,1376539,0
+orden_95,cli_42,Empresa,Oriente,2023,Entregado,0,6697039,6697039,0
+orden_96,cli_49,Persona,Norte,2023,En tránsito,0,16594793,16594793,0
+orden_97,cli_40,Empresa,Norte,2022,Entregado,0,17610792,17610792,0
+orden_98,cli_16,Persona,Sur,2022,En preparación,0,7670425,7670425,0
+orden_99,cli_10,Empresa,Centro,2022,Entregado,0,4162863,4162863,0
+orden_100,cli_25,Empresa,Oriente,2022,En tránsito,0,7516360,7516360,0
