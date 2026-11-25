@@ -1,0 +1,101 @@
+﻿[{"id":"orden_1","cliente_id":"cli_99","ruta_id":"ruta_43","estado":"Cancelado","total":134152.77,"fecha_envio":"2022-10-18T00:00:00"}
+,{"id":"orden_2","cliente_id":"cli_73","ruta_id":"ruta_99","estado":"Entregado","total":165509.2,"fecha_envio":"2024-06-05T00:00:00"}
+,{"id":"orden_3","cliente_id":"cli_31","ruta_id":"ruta_93","estado":"Entregado","total":111841.49,"fecha_envio":"2022-03-16T00:00:00"}
+,{"id":"orden_4","cliente_id":"cli_56","ruta_id":"ruta_70","estado":"En preparación","total":151191.2,"fecha_envio":"2022-08-07T00:00:00"}
+,{"id":"orden_5","cliente_id":"cli_86","ruta_id":"ruta_36","estado":"En tránsito","total":170785.29,"fecha_envio":"2023-09-25T00:00:00"}
+,{"id":"orden_6","cliente_id":"cli_16","ruta_id":"ruta_20","estado":"Entregado","total":142059.52,"fecha_envio":"2023-01-09T00:00:00"}
+,{"id":"orden_7","cliente_id":"cli_72","ruta_id":"ruta_58","estado":"Entregado","total":55832.56,"fecha_envio":"2022-02-08T00:00:00"}
+,{"id":"orden_8","cliente_id":"cli_68","ruta_id":"ruta_44","estado":"Cancelado","total":88734.89,"fecha_envio":"2023-05-07T00:00:00"}
+,{"id":"orden_9","cliente_id":"cli_22","ruta_id":"ruta_36","estado":"En preparación","total":121749.79,"fecha_envio":"2023-02-18T00:00:00"}
+,{"id":"orden_10","cliente_id":"cli_1","ruta_id":"ruta_94","estado":"En preparación","total":197116.52,"fecha_envio":"2023-04-10T00:00:00"}
+,{"id":"orden_11","cliente_id":"cli_75","ruta_id":"ruta_49","estado":"Entregado","total":75995.81,"fecha_envio":"2024-01-17T00:00:00"}
+,{"id":"orden_12","cliente_id":"cli_13","ruta_id":"ruta_93","estado":"Entregado","total":108077.34,"fecha_envio":"2023-05-08T00:00:00"}
+,{"id":"orden_13","cliente_id":"cli_77","ruta_id":"ruta_12","estado":"En preparación","total":106763.04,"fecha_envio":"2024-05-05T00:00:00"}
+,{"id":"orden_14","cliente_id":"cli_71","ruta_id":"ruta_42","estado":"Entregado","total":168699.7,"fecha_envio":"2022-01-16T00:00:00"}
+,{"id":"orden_15","cliente_id":"cli_50","ruta_id":"ruta_60","estado":"Cancelado","total":83084.24,"fecha_envio":"2024-03-14T00:00:00"}
+,{"id":"orden_16","cliente_id":"cli_59","ruta_id":"ruta_38","estado":"En tránsito","total":22577.55,"fecha_envio":"2022-02-05T00:00:00"}
+,{"id":"orden_17","cliente_id":"cli_35","ruta_id":"ruta_49","estado":"En tránsito","total":135211.93,"fecha_envio":"2023-05-14T00:00:00"}
+,{"id":"orden_18","cliente_id":"cli_29","ruta_id":"ruta_39","estado":"Cancelado","total":171501.06,"fecha_envio":"2024-03-16T00:00:00"}
+,{"id":"orden_19","cliente_id":"cli_63","ruta_id":"ruta_51","estado":"Cancelado","total":140914.68,"fecha_envio":"2023-02-03T00:00:00"}
+,{"id":"orden_20","cliente_id":"cli_96","ruta_id":"ruta_94","estado":"Cancelado","total":46057.64,"fecha_envio":"2022-07-05T00:00:00"}
+,{"id":"orden_21","cliente_id":"cli_36","ruta_id":"ruta_65","estado":"En preparación","total":169630.46,"fecha_envio":"2023-04-24T00:00:00"}
+,{"id":"orden_22","cliente_id":"cli_71","ruta_id":"ruta_68","estado":"En tránsito","total":190328.01,"fecha_envio":"2024-04-10T00:00:00"}
+,{"id":"orden_23","cliente_id":"cli_20","ruta_id":"ruta_20","estado":"Cancelado","total":172305.02,"fecha_envio":"2022-09-23T00:00:00"}
+,{"id":"orden_24","cliente_id":"cli_68","ruta_id":"ruta_47","estado":"En tránsito","total":101127.88,"fecha_envio":"2022-06-18T00:00:00"}
+,{"id":"orden_25","cliente_id":"cli_90","ruta_id":"ruta_12","estado":"Cancelado","total":151723.26,"fecha_envio":"2023-05-12T00:00:00"}
+,{"id":"orden_26","cliente_id":"cli_27","ruta_id":"ruta_98","estado":"Entregado","total":182075.53,"fecha_envio":"2022-01-15T00:00:00"}
+,{"id":"orden_27","cliente_id":"cli_19","ruta_id":"ruta_45","estado":"Cancelado","total":70713.5,"fecha_envio":"2023-09-15T00:00:00"}
+,{"id":"orden_28","cliente_id":"cli_11","ruta_id":"ruta_60","estado":"Entregado","total":197977.37,"fecha_envio":"2024-02-27T00:00:00"}
+,{"id":"orden_29","cliente_id":"cli_91","ruta_id":"ruta_94","estado":"En tránsito","total":131550.6,"fecha_envio":"2023-05-05T00:00:00"}
+,{"id":"orden_30","cliente_id":"cli_3","ruta_id":"ruta_35","estado":"En preparación","total":174983.73,"fecha_envio":"2023-02-21T00:00:00"}
+,{"id":"orden_31","cliente_id":"cli_58","ruta_id":"ruta_12","estado":"En preparación","total":188583.54,"fecha_envio":"2023-12-25T00:00:00"}
+,{"id":"orden_32","cliente_id":"cli_88","ruta_id":"ruta_51","estado":"En preparación","total":18594.78,"fecha_envio":"2022-02-09T00:00:00"}
+,{"id":"orden_33","cliente_id":"cli_74","ruta_id":"ruta_93","estado":"En tránsito","total":60115.39,"fecha_envio":"2022-02-13T00:00:00"}
+,{"id":"orden_34","cliente_id":"cli_59","ruta_id":"ruta_76","estado":"Cancelado","total":48689.63,"fecha_envio":"2024-03-20T00:00:00"}
+,{"id":"orden_35","cliente_id":"cli_55","ruta_id":"ruta_99","estado":"En tránsito","total":190106.46,"fecha_envio":"2022-09-21T00:00:00"}
+,{"id":"orden_36","cliente_id":"cli_88","ruta_id":"ruta_26","estado":"En tránsito","total":170947.69,"fecha_envio":"2022-11-16T00:00:00"}
+,{"id":"orden_37","cliente_id":"cli_43","ruta_id":"ruta_24","estado":"Cancelado","total":18470.88,"fecha_envio":"2022-04-21T00:00:00"}
+,{"id":"orden_38","cliente_id":"cli_58","ruta_id":"ruta_21","estado":"Entregado","total":152561.69,"fecha_envio":"2023-05-09T00:00:00"}
+,{"id":"orden_39","cliente_id":"cli_1","ruta_id":"ruta_60","estado":"En preparación","total":82867.02,"fecha_envio":"2022-11-03T00:00:00"}
+,{"id":"orden_40","cliente_id":"cli_48","ruta_id":"ruta_62","estado":"Entregado","total":44600.71,"fecha_envio":"2023-10-29T00:00:00"}
+,{"id":"orden_41","cliente_id":"cli_79","ruta_id":"ruta_77","estado":"En preparación","total":62126.82,"fecha_envio":"2024-01-28T00:00:00"}
+,{"id":"orden_42","cliente_id":"cli_59","ruta_id":"ruta_11","estado":"Entregado","total":81640.21,"fecha_envio":"2022-01-21T00:00:00"}
+,{"id":"orden_43","cliente_id":"cli_69","ruta_id":"ruta_88","estado":"En preparación","total":12216.14,"fecha_envio":"2022-04-05T00:00:00"}
+,{"id":"orden_44","cliente_id":"cli_13","ruta_id":"ruta_21","estado":"Entregado","total":39163.42,"fecha_envio":"2023-10-08T00:00:00"}
+,{"id":"orden_45","cliente_id":"cli_36","ruta_id":"ruta_64","estado":"En preparación","total":73933.08,"fecha_envio":"2022-05-11T00:00:00"}
+,{"id":"orden_46","cliente_id":"cli_69","ruta_id":"ruta_44","estado":"Cancelado","total":177441.7,"fecha_envio":"2023-11-13T00:00:00"}
+,{"id":"orden_47","cliente_id":"cli_35","ruta_id":"ruta_89","estado":"En tránsito","total":159634.32,"fecha_envio":"2023-11-13T00:00:00"}
+,{"id":"orden_48","cliente_id":"cli_9","ruta_id":"ruta_62","estado":"Cancelado","total":152201.31,"fecha_envio":"2023-12-14T00:00:00"}
+,{"id":"orden_49","cliente_id":"cli_81","ruta_id":"ruta_39","estado":"Cancelado","total":85185.59,"fecha_envio":"2024-05-30T00:00:00"}
+,{"id":"orden_50","cliente_id":"cli_68","ruta_id":"ruta_54","estado":"En preparación","total":91424.91,"fecha_envio":"2022-01-17T00:00:00"}
+,{"id":"orden_51","cliente_id":"cli_48","ruta_id":"ruta_69","estado":"En tránsito","total":143176.15,"fecha_envio":"2024-06-07T00:00:00"}
+,{"id":"orden_52","cliente_id":"cli_39","ruta_id":"ruta_29","estado":"En preparación","total":165826.58,"fecha_envio":"2023-07-14T00:00:00"}
+,{"id":"orden_53","cliente_id":"cli_61","ruta_id":"ruta_47","estado":"Entregado","total":147296.41,"fecha_envio":"2023-09-19T00:00:00"}
+,{"id":"orden_54","cliente_id":"cli_27","ruta_id":"ruta_63","estado":"En tránsito","total":61551.05,"fecha_envio":"2023-02-20T00:00:00"}
+,{"id":"orden_55","cliente_id":"cli_98","ruta_id":"ruta_67","estado":"En tránsito","total":73814.03,"fecha_envio":"2024-06-22T00:00:00"}
+,{"id":"orden_56","cliente_id":"cli_87","ruta_id":"ruta_65","estado":"En preparación","total":113992.02,"fecha_envio":"2022-08-14T00:00:00"}
+,{"id":"orden_57","cliente_id":"cli_68","ruta_id":"ruta_86","estado":"Entregado","total":54679.23,"fecha_envio":"2023-01-07T00:00:00"}
+,{"id":"orden_58","cliente_id":"cli_29","ruta_id":"ruta_19","estado":"Cancelado","total":96902.9,"fecha_envio":"2023-03-27T00:00:00"}
+,{"id":"orden_59","cliente_id":"cli_8","ruta_id":"ruta_9","estado":"En preparación","total":65446.18,"fecha_envio":"2023-06-08T00:00:00"}
+,{"id":"orden_60","cliente_id":"cli_95","ruta_id":"ruta_63","estado":"Cancelado","total":80112.24,"fecha_envio":"2023-04-26T00:00:00"}
+,{"id":"orden_61","cliente_id":"cli_39","ruta_id":"ruta_49","estado":"Entregado","total":25799.36,"fecha_envio":"2022-09-09T00:00:00"}
+,{"id":"orden_62","cliente_id":"cli_90","ruta_id":"ruta_27","estado":"Entregado","total":55358.79,"fecha_envio":"2024-01-09T00:00:00"}
+,{"id":"orden_63","cliente_id":"cli_7","ruta_id":"ruta_56","estado":"Cancelado","total":26076.37,"fecha_envio":"2023-10-11T00:00:00"}
+,{"id":"orden_64","cliente_id":"cli_91","ruta_id":"ruta_91","estado":"Entregado","total":106409.91,"fecha_envio":"2022-01-23T00:00:00"}
+,{"id":"orden_65","cliente_id":"cli_67","ruta_id":"ruta_46","estado":"En preparación","total":104968.45,"fecha_envio":"2023-03-20T00:00:00"}
+,{"id":"orden_66","cliente_id":"cli_92","ruta_id":"ruta_34","estado":"Cancelado","total":107672.42,"fecha_envio":"2023-08-20T00:00:00"}
+,{"id":"orden_67","cliente_id":"cli_35","ruta_id":"ruta_74","estado":"En tránsito","total":15218.59,"fecha_envio":"2022-08-19T00:00:00"}
+,{"id":"orden_68","cliente_id":"cli_94","ruta_id":"ruta_65","estado":"En preparación","total":110591.61,"fecha_envio":"2023-09-02T00:00:00"}
+,{"id":"orden_69","cliente_id":"cli_8","ruta_id":"ruta_77","estado":"Cancelado","total":136300.86,"fecha_envio":"2022-03-22T00:00:00"}
+,{"id":"orden_70","cliente_id":"cli_39","ruta_id":"ruta_60","estado":"Cancelado","total":198622.39,"fecha_envio":"2023-10-13T00:00:00"}
+,{"id":"orden_71","cliente_id":"cli_18","ruta_id":"ruta_33","estado":"En preparación","total":109499.89,"fecha_envio":"2024-03-20T00:00:00"}
+,{"id":"orden_72","cliente_id":"cli_47","ruta_id":"ruta_8","estado":"Entregado","total":40899.26,"fecha_envio":"2023-07-16T00:00:00"}
+,{"id":"orden_73","cliente_id":"cli_36","ruta_id":"ruta_63","estado":"En preparación","total":43892.7,"fecha_envio":"2024-06-13T00:00:00"}
+,{"id":"orden_74","cliente_id":"cli_3","ruta_id":"ruta_99","estado":"Entregado","total":151939.8,"fecha_envio":"2022-02-19T00:00:00"}
+,{"id":"orden_75","cliente_id":"cli_21","ruta_id":"ruta_32","estado":"En preparación","total":38707.91,"fecha_envio":"2022-04-13T00:00:00"}
+,{"id":"orden_76","cliente_id":"cli_50","ruta_id":"ruta_58","estado":"En tránsito","total":72390.5,"fecha_envio":"2022-02-15T00:00:00"}
+,{"id":"orden_77","cliente_id":"cli_31","ruta_id":"ruta_21","estado":"En preparación","total":146329.03,"fecha_envio":"2023-01-15T00:00:00"}
+,{"id":"orden_78","cliente_id":"cli_79","ruta_id":"ruta_30","estado":"En tránsito","total":102726.16,"fecha_envio":"2023-04-02T00:00:00"}
+,{"id":"orden_79","cliente_id":"cli_65","ruta_id":"ruta_79","estado":"En preparación","total":76028.25,"fecha_envio":"2022-11-30T00:00:00"}
+,{"id":"orden_80","cliente_id":"cli_22","ruta_id":"ruta_50","estado":"Entregado","total":151690.03,"fecha_envio":"2023-03-04T00:00:00"}
+,{"id":"orden_81","cliente_id":"cli_89","ruta_id":"ruta_100","estado":"En tránsito","total":33970.79,"fecha_envio":"2023-04-02T00:00:00"}
+,{"id":"orden_82","cliente_id":"cli_39","ruta_id":"ruta_11","estado":"En tránsito","total":62151.37,"fecha_envio":"2023-05-06T00:00:00"}
+,{"id":"orden_83","cliente_id":"cli_4","ruta_id":"ruta_83","estado":"En preparación","total":135716.85,"fecha_envio":"2022-08-04T00:00:00"}
+,{"id":"orden_84","cliente_id":"cli_79","ruta_id":"ruta_48","estado":"Entregado","total":117435.34,"fecha_envio":"2024-01-23T00:00:00"}
+,{"id":"orden_85","cliente_id":"cli_2","ruta_id":"ruta_31","estado":"En tránsito","total":151058.57,"fecha_envio":"2022-08-23T00:00:00"}
+,{"id":"orden_86","cliente_id":"cli_4","ruta_id":"ruta_80","estado":"En preparación","total":165364.2,"fecha_envio":"2024-06-13T00:00:00"}
+,{"id":"orden_87","cliente_id":"cli_65","ruta_id":"ruta_51","estado":"Cancelado","total":197288.08,"fecha_envio":"2023-08-27T00:00:00"}
+,{"id":"orden_88","cliente_id":"cli_38","ruta_id":"ruta_75","estado":"Entregado","total":55105.86,"fecha_envio":"2022-10-19T00:00:00"}
+,{"id":"orden_89","cliente_id":"cli_76","ruta_id":"ruta_51","estado":"Cancelado","total":102167.59,"fecha_envio":"2023-06-03T00:00:00"}
+,{"id":"orden_90","cliente_id":"cli_4","ruta_id":"ruta_87","estado":"Entregado","total":179474.96,"fecha_envio":"2023-10-28T00:00:00"}
+,{"id":"orden_91","cliente_id":"cli_98","ruta_id":"ruta_18","estado":"En preparación","total":72623.97,"fecha_envio":"2022-10-06T00:00:00"}
+,{"id":"orden_92","cliente_id":"cli_66","ruta_id":"ruta_9","estado":"En preparación","total":190572.76,"fecha_envio":"2023-09-02T00:00:00"}
+,{"id":"orden_93","cliente_id":"cli_34","ruta_id":"ruta_14","estado":"Cancelado","total":185698.33,"fecha_envio":"2023-02-22T00:00:00"}
+,{"id":"orden_94","cliente_id":"cli_71","ruta_id":"ruta_85","estado":"En preparación","total":13765.39,"fecha_envio":"2022-03-07T00:00:00"}
+,{"id":"orden_95","cliente_id":"cli_42","ruta_id":"ruta_80","estado":"Entregado","total":66970.39,"fecha_envio":"2023-07-28T00:00:00"}
+,{"id":"orden_96","cliente_id":"cli_49","ruta_id":"ruta_13","estado":"En tránsito","total":165947.93,"fecha_envio":"2023-07-07T00:00:00"}
+,{"id":"orden_97","cliente_id":"cli_40","ruta_id":"ruta_59","estado":"Entregado","total":176107.92,"fecha_envio":"2022-12-23T00:00:00"}
+,{"id":"orden_98","cliente_id":"cli_16","ruta_id":"ruta_85","estado":"En preparación","total":76704.25,"fecha_envio":"2022-11-07T00:00:00"}
+,{"id":"orden_99","cliente_id":"cli_10","ruta_id":"ruta_43","estado":"Entregado","total":41628.63,"fecha_envio":"2022-04-24T00:00:00"}
+,{"id":"orden_100","cliente_id":"cli_25","ruta_id":"ruta_87","estado":"En tránsito","total":75163.6,"fecha_envio":"2022-10-26T00:00:00"}
+]
